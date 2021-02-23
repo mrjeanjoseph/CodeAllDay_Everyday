@@ -3,3 +3,8 @@ C:\Users\Computer\source\repos\HotelApplication\HotelAppDatabase\bin\Debug\Hotel
 C:\Users\Computer\source\repos\HotelApplication\HotelAppDatabase\bin\Debug\HotelAppDatabase.pdb
 C:\Users\Computer\source\repos\HotelApplication\HotelAppDatabase\obj\Debug\HotelAppDatabase.dll
 C:\Users\Computer\source\repos\HotelApplication\HotelAppDatabase\obj\Debug\HotelAppDatabase.pdb
+C:\Users\Computer\source\repos\HotelApplication\HotelAppDatabase\obj\Debug\HotelAppDatabase.sqlprojAssemblyReference.cache
+C:\Users\Computer\source\repos\HotelApplication\HotelAppDatabase\obj\Debug\Model.xml
+C:\Users\Computer\source\repos\HotelApplication\HotelAppDatabase\obj\Debug\refactor.xml
+C:\Users\Computer\source\repos\HotelApplication\HotelAppDatabase\obj\Debug\postdeploy.sql
+C:\Users\Computer\source\repos\HotelApplication\HotelAppDatabase\obj\Debug\predeploy.sql
