@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/naQY2ukbG8Z3Db+wHSuD3oKPsvjZj7FerjS1jZAZ/dnAku6R1JJPlN1cFZqY5fibmHvNKwGOFpnqZR9pwaW2A==",
+  "dgSpecHash": "E2VEUkJy0f37ut8huaZ6XrM7nwlQ51BymhO6EuhN/uztSbxM/iqyGju4gd+JGb+1D42Pa4SGVvn6vOxOY4E2yg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Computer\\source\\repos\\GitUpdates\\HotelApplication\\HotelAppLibray\\HotelAppLibray.csproj",
+  "projectFilePath": "C:\\Users\\Computer\\source\\repos\\1 - CodingAllDayEveryday\\HotelApplication\\HotelAppLibray\\HotelAppLibray.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Computer\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Users\\Computer\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
