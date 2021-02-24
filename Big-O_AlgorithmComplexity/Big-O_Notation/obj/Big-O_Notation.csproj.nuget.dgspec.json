@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Source\\Big-O_AlgorithmComplexity\\Big-O_Notation\\Big-O_Notation.csproj": {}
+    "C:\\Users\\Computer\\source\\repos\\GitUpdates\\Big O notation\\Big-O_Notation\\Big-O_Notation.csproj": {}
   },
   "projects": {
-    "D:\\Source\\Big-O_AlgorithmComplexity\\Big-O_Notation\\Big-O_Notation.csproj": {
+    "C:\\Users\\Computer\\source\\repos\\GitUpdates\\Big O notation\\Big-O_Notation\\Big-O_Notation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source\\Big-O_AlgorithmComplexity\\Big-O_Notation\\Big-O_Notation.csproj",
+        "projectUniqueName": "C:\\Users\\Computer\\source\\repos\\GitUpdates\\Big O notation\\Big-O_Notation\\Big-O_Notation.csproj",
         "projectName": "Big-O_Notation",
-        "projectPath": "D:\\Source\\Big-O_AlgorithmComplexity\\Big-O_Notation\\Big-O_Notation.csproj",
+        "projectPath": "C:\\Users\\Computer\\source\\repos\\GitUpdates\\Big O notation\\Big-O_Notation\\Big-O_Notation.csproj",
         "packagesPath": "C:\\Users\\Computer\\.nuget\\packages\\",
-        "outputPath": "D:\\Source\\Big-O_AlgorithmComplexity\\Big-O_Notation\\obj\\",
+        "outputPath": "C:\\Users\\Computer\\source\\repos\\GitUpdates\\Big O notation\\Big-O_Notation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
