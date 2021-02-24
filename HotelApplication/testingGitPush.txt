@@ -1,3 +1,0 @@
-Commit1: This is a test push
-Commit2: I updated the default branch to master.
-Commit3: push without the browser opened.
