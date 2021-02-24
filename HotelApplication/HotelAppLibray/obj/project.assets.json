@@ -2207,11 +2207,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Computer\\source\\repos\\1 - CodingAllDayEveryday\\HotelApplication\\HotelAppLibray\\HotelAppLibray.csproj",
+      "projectUniqueName": "C:\\Users\\Computer\\source\\repos\\HotelApplication\\HotelAppLibray\\HotelAppLibray.csproj",
       "projectName": "HotelAppLibray",
-      "projectPath": "C:\\Users\\Computer\\source\\repos\\1 - CodingAllDayEveryday\\HotelApplication\\HotelAppLibray\\HotelAppLibray.csproj",
+      "projectPath": "C:\\Users\\Computer\\source\\repos\\HotelApplication\\HotelAppLibray\\HotelAppLibray.csproj",
       "packagesPath": "C:\\Users\\Computer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Computer\\source\\repos\\1 - CodingAllDayEveryday\\HotelApplication\\HotelAppLibray\\obj\\",
+      "outputPath": "C:\\Users\\Computer\\source\\repos\\HotelApplication\\HotelAppLibray\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
