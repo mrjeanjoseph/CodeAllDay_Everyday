@@ -1,0 +1,4 @@
+Push to Remote Repo: 
+	1. git add.
+	2. git commit -m "TEXT HERE" 
+	3. git push origin master
