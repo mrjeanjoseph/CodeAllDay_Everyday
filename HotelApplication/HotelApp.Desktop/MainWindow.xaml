@@ -4,9 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotelApp.Desktop"
-        mc:Ignorable="d"
+        mc:Ignorable="d" FontSize="20" FontFamily="Times New Roman"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
@@ -19,6 +19,43 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Grid.Row="0" Grid.Column="0" Text="Search for Guest"/>
+        <TextBlock Grid.Row="0" Grid.Column="0"
+                   Text="Search for Guest" FontSize="28"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0">
+            <TextBox x:Name="lastNameText" MinWidth="200" Margin="5"/>
+            <Button x:Name="SearchForGuests" Margin="5" Padding="5"
+                    Click="SearchForGuests_Click">
+                Search
+            </Button>
+        </StackPanel>
+
+        <ListBox x:Name="resultsList" Grid.Row="2" Grid.Column="0"
+                 Margin="5 20 5 5" ItemsSource="{Binding}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5">Reservation: </TextBlock>
+                            <TextBlock Text="{Binding FirstName}" Margin="5"/>
+                            <TextBlock Text="{Binding LastName}" Margin="5"/>
+                            <Button Margin="5" Padding="10">Check In</Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5">Room: </TextBlock>
+                            <TextBlock Text="{Binding Title}" Margin="5"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5">Room Number: </TextBlock>
+                            <TextBlock Text="{Binding Title}" Margin="5"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5">Total Cost: </TextBlock>
+                            <TextBlock Text="{Binding TotalCost}" Margin="5"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>
