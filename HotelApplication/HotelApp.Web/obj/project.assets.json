@@ -1584,11 +1584,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Computer\\source\\repos\\HotelApplication\\HotelApp.Web\\HotelApp.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Computer\\source\\repos\\1 - CodingAllDayEveryday\\HotelApplication\\HotelApp.Web\\HotelApp.Web.csproj",
       "projectName": "HotelApp.Web",
-      "projectPath": "C:\\Users\\Computer\\source\\repos\\HotelApplication\\HotelApp.Web\\HotelApp.Web.csproj",
+      "projectPath": "C:\\Users\\Computer\\source\\repos\\1 - CodingAllDayEveryday\\HotelApplication\\HotelApp.Web\\HotelApp.Web.csproj",
       "packagesPath": "C:\\Users\\Computer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Computer\\source\\repos\\HotelApplication\\HotelApp.Web\\obj\\",
+      "outputPath": "C:\\Users\\Computer\\source\\repos\\1 - CodingAllDayEveryday\\HotelApplication\\HotelApp.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -1610,8 +1610,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Computer\\source\\repos\\HotelApplication\\HotelAppLibray\\HotelAppLibray.csproj": {
-              "projectPath": "C:\\Users\\Computer\\source\\repos\\HotelApplication\\HotelAppLibray\\HotelAppLibray.csproj"
+            "C:\\Users\\Computer\\source\\repos\\1 - CodingAllDayEveryday\\HotelApplication\\HotelAppLibray\\HotelAppLibray.csproj": {
+              "projectPath": "C:\\Users\\Computer\\source\\repos\\1 - CodingAllDayEveryday\\HotelApplication\\HotelAppLibray\\HotelAppLibray.csproj"
             }
           }
         }
