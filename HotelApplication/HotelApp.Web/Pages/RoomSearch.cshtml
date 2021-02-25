@@ -16,7 +16,7 @@
             float: left;
             width: 25%;
             padding: 10px;
-            height: 300px; /* Should be removed. Only for demonstration */
+            height: 400px; /* Should be removed. Only for demonstration */
         }
 
         /* Clear floats after the columns */
@@ -35,11 +35,11 @@
         <div class="column" style="background-color:#aaa;">
             <h1>Room Search</h1>
             <div class="form-group">
-                <label asp-for="@Model.StartDate" />
+                <label asp-for="@Model.StartDate"></label>
                 <input asp-for="@Model.StartDate" />
             </div>
             <div class="form-group">
-                <label asp-for="@Model.EndDate" />
+                <label asp-for="@Model.EndDate"></label>
                 <input asp-for="@Model.EndDate" />
             </div>
             <button type="submit" class="btn btn-primary">Search</button>
@@ -69,8 +69,8 @@
                         <td>@string.Format("{0:C}", room.Price)</td>
                         <td><a asp-page="/BookRoom"
                                asp-route-roomtypeid="@room.Id"
-                               asp-route-startdate="@Model.StartDate"
-                               asp-route-enddate="@Model.EndDate"
+                               asp-route-startdate="@Model.StartDate.ToShortDateString()"
+                               asp-route-enddate="@Model.EndDate.ToShortDateString()"
                                >Book Now</a></td>
                     </tr>
                 }

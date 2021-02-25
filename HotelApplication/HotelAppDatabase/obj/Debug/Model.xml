@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="HotelAppDatabase.dll" />
-			<Metadata Name="FileName" Value="C:\USERS\COMPUTER\SOURCE\REPOS\HOTELAPPLICATION\HOTELAPPDATABASE\OBJ\DEBUG\HOTELAPPDATABASE.DLL" />
+			<Metadata Name="FileName" Value="C:\USERS\COMPUTER\SOURCE\REPOS\1 - CODINGALLDAYEVERYDAY\HOTELAPPLICATION\HOTELAPPDATABASE\OBJ\DEBUG\HOTELAPPDATABASE.DLL" />
 			<Metadata Name="AssemblyName" Value="HotelAppDatabase" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="C:\Users\Computer\source\repos\HotelApplication\HotelAppDatabase\obj\Debug\HotelAppDatabase.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelAppDatabase\obj\Debug\HotelAppDatabase.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>
@@ -66,7 +66,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[RoomTypes].[Id]" />
+								<References Name="[dbo].[Bookings].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -74,7 +74,7 @@
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[RoomTypes]" />
+					<References Name="[dbo].[Bookings]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="4" />
@@ -104,7 +104,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Bookings].[Id]" />
+								<References Name="[dbo].[Rooms].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -112,7 +112,7 @@
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Bookings]" />
+					<References Name="[dbo].[Rooms]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
@@ -123,7 +123,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Rooms].[Id]" />
+								<References Name="[dbo].[RoomTypes].[Id]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -131,7 +131,7 @@
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Rooms]" />
+					<References Name="[dbo].[RoomTypes]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
@@ -154,7 +154,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="6" />
+						<AttachedAnnotation Disambiguator="4" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -412,7 +412,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="7" />
+						<AttachedAnnotation Disambiguator="6" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -474,7 +474,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="4" />
+						<AttachedAnnotation Disambiguator="7" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -1183,6 +1183,59 @@ end]]></Value>
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spRoomTypes_GetAvailableTypes]&#xD;&#xA;&#x9;@startDate date,&#xD;&#xA;&#x9;@endDate date&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spRoomTypes_GetById]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin
+	set nocount on;
+
+	select *
+	from dbo.RoomTypes
+	where Id = @id
+
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[RoomTypes]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[RoomTypes].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spRoomTypes_GetById].[@id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spRoomTypes_GetById].[@id]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="141" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spRoomTypes_GetById]&#xD;&#xA;&#x9;@id int&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 	</Model>
