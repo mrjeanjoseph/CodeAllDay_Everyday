@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelAppLibray.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -12,14 +13,18 @@ using System.Windows.Shapes;
 
 namespace HotelApp.Desktop
 {
-    /// <summary>
-    /// Interaction logic for CheckinForm.xaml
-    /// </summary>
     public partial class CheckinForm : Window
     {
+        private BookingFullModel _data = null;
+
         public CheckinForm()
         {
             InitializeComponent();
+        }
+
+        public void PopulateCheckInInfo(BookingFullModel data)
+        {
+            _data = data;
         }
     }
 }
