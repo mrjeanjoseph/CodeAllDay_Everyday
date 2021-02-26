@@ -31,30 +31,46 @@
         </StackPanel>
 
         <ListBox x:Name="resultsList" Grid.Row="2" Grid.Column="0"
-                 Margin="5 20 5 5" ItemsSource="{Binding}">
+                 Margin="5 20 5 5" ItemsSource="{Binding}" MaxHeight="400"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel Orientation="Vertical" MaxHeight="300"
-                                ScrollViewer.VerticalScrollBarVisibility="Auto">
-                        <StackPanel Orientation="Horizontal">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="0">
                             <TextBlock FontWeight="Black" Margin="5">Reservation:</TextBlock>
                             <TextBlock Text="{Binding FirstName}" Margin="5"/>
                             <TextBlock Text="{Binding LastName}" Margin="5"/>
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal">
+                        <Button Margin="5" Padding="10" Grid.Row="0" Grid.Column="1"
+                                Grid.RowSpan="4" VerticalAlignment="Center">CheckIn</Button>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="1">
                             <TextBlock FontWeight="Black" Margin="5">Room:</TextBlock>
                             <TextBlock Text="{Binding Title}" Margin="5"/>
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal" Grid.Row="2">
                             <TextBlock FontWeight="Black" Margin="5">Room Number:</TextBlock>
-                            <TextBlock Text="{Binding Title}" Margin="5"/>
+                            <TextBlock Text="{Binding RoomNumber}" Margin="5"/>
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal" Grid.Row="3">
                             <TextBlock FontWeight="Black" Margin="5">Total Cost:</TextBlock>
                             <TextBlock Text="{Binding TotalCost, StringFormat='C'}" Margin="5"/>
                         </StackPanel>
-                        <Button Margin="5" Padding="10" MaxWidth="350" HorizontalAlignment="Left">Check In</Button>
-                    </StackPanel>
+
+                    </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
