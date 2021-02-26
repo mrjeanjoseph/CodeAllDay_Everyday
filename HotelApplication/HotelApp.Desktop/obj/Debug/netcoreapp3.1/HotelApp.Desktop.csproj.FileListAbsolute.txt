@@ -42,3 +42,13 @@ C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelAp
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\HotelAppLibray.pdb
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\obj\Debug\netcoreapp3.1\CheckinForm.g.cs
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\obj\Debug\netcoreapp3.1\CheckinForm.baml
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
