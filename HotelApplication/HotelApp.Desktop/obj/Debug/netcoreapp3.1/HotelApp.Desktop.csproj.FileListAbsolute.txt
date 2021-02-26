@@ -40,3 +40,5 @@ C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelAp
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\HotelAppLibray.dll
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\HotelAppLibray.pdb
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\obj\Debug\netcoreapp3.1\CheckinForm.g.cs
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\obj\Debug\netcoreapp3.1\CheckinForm.baml
