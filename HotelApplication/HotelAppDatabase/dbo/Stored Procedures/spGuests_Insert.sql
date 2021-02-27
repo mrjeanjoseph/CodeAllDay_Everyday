@@ -9,10 +9,10 @@ begin
 	if not exists (select 1 from dbo.Guests where FirstName = @firstName and LastName = @lastName)
 	begin
 		insert into dbo.Guests (FirstName, LastName)
-		values (@firstName, @lastName)
+		values (@firstName, @lastName);
 	end
 
 	select top 1 [Id], [FirstName], [LastName]
 	from dbo.Guests
-	where FirstName = @firstName and LastName = @lastName
+	where FirstName = @firstName and LastName = @lastName;
 end
