@@ -99,3 +99,5 @@ C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelAp
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Web\obj\Debug\net5.0\HotelApp.Web.pdb
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Web\obj\Debug\net5.0\HotelApp.Web.genruntimeconfig.cache
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Web\obj\Debug\net5.0\Razor\Pages\BookRoom.cshtml.g.cs
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Web\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Web\bin\Debug\net5.0\SQLitePCLRaw.core.dll
