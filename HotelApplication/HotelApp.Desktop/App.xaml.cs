@@ -28,6 +28,7 @@ namespace HotelApp.Desktop
             services.AddTransient<MainWindow>();
             services.AddTransient<CheckinForm>();
             services.AddTransient<ISqlDataAccess, SqlDataAccess>();
+            services.AddTransient<ISqliteDataAccess, SqliteDataAccess>();
             services.AddTransient<IDatabaseData, SqlData>();
 
             var builder = new ConfigurationBuilder()

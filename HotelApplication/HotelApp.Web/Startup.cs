@@ -28,6 +28,7 @@ namespace HotelApp.Web
             services.AddRazorPages();
             services.AddTransient<IDatabaseData, SqlData>();
             services.AddTransient<ISqlDataAccess, SqlDataAccess>();
+            services.AddTransient<ISqliteDataAccess, SqliteDataAccess>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "E2VEUkJy0f37ut8huaZ6XrM7nwlQ51BymhO6EuhN/uztSbxM/iqyGju4gd+JGb+1D42Pa4SGVvn6vOxOY4E2yg==",
+  "dgSpecHash": "Uxx+HkKu6H5m5EU/ZZZbnxfNDjW7V5r+irGmDalz5AmzHIIkmxj3GECE7RL5CuqVJKcOiKRvvfq28f7poEdlyg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Computer\\source\\repos\\1 - CodingAllDayEveryday\\HotelApplication\\HotelAppLibray\\HotelAppLibray.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Computer\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
+    "C:\\Users\\Computer\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.3\\microsoft.data.sqlite.core.5.0.3.nupkg.sha512",
     "C:\\Users\\Computer\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Computer\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
@@ -15,6 +16,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Computer\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
     "C:\\Users\\Computer\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Computer\\.nuget\\packages\\system.data.common\\4.3.0\\system.data.common.4.3.0.nupkg.sha512",
