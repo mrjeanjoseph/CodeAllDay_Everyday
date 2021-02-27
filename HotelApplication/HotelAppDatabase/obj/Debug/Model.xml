@@ -873,12 +873,12 @@ begin
 	if not exists (select 1 from dbo.Guests where FirstName = @firstName and LastName = @lastName)
 	begin
 		insert into dbo.Guests (FirstName, LastName)
-		values (@firstName, @lastName)
+		values (@firstName, @lastName);
 	end
 
 	select top 1 [Id], [FirstName], [LastName]
 	from dbo.Guests
-	where FirstName = @firstName and LastName = @lastName
+	where FirstName = @firstName and LastName = @lastName;
 end]]></Value>
 			</Property>
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -948,7 +948,7 @@ end]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="445" />
+				<Property Name="Length" Value="447" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spGuests_Insert]&#xD;&#xA;&#x9;@firstName nvarchar(50),&#xD;&#xA;&#x9;@lastName nvarchar(50)&#xD;&#xA;&#xD;&#xA;AS" />
@@ -1191,7 +1191,7 @@ end]]></Value>
 begin
 	set nocount on;
 
-	select *
+	select [Id], [Title], [Description], [Price]
 	from dbo.RoomTypes
 	where Id = @id
 
@@ -1204,6 +1204,15 @@ end]]></Value>
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[RoomTypes].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[RoomTypes].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[RoomTypes].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[RoomTypes].[Price]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[spRoomTypes_GetById].[@id]" />
@@ -1232,7 +1241,7 @@ end]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="141" />
+				<Property Name="Length" Value="177" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spRoomTypes_GetById]&#xD;&#xA;&#x9;@id int&#xD;&#xA;AS" />

@@ -5,11 +5,9 @@ C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelAp
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\HotelApp.Desktop.dll
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\HotelApp.Desktop.pdb
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\obj\Debug\netcoreapp3.1\HotelApp.Desktop.csprojAssemblyReference.cache
-C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\obj\Debug\netcoreapp3.1\HotelApp.Desktop_MarkupCompile.cache
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\obj\Debug\netcoreapp3.1\HotelApp.Desktop_MarkupCompile.lref
-C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\obj\Debug\netcoreapp3.1\MainWindow.baml
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\obj\Debug\netcoreapp3.1\HotelApp.Desktop.g.resources
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\obj\Debug\netcoreapp3.1\HotelApp.Desktop.AssemblyInfoInputs.cache
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\obj\Debug\netcoreapp3.1\HotelApp.Desktop.AssemblyInfo.cs
@@ -57,3 +55,5 @@ C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelAp
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\SQLite.Interop.dll
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SQLite.Interop.dll
 C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\obj\Debug\netcoreapp3.1\SearchGuestsForm.g.cs
+C:\Users\Computer\source\repos\1 - CodingAllDayEveryday\HotelApplication\HotelApp.Desktop\obj\Debug\netcoreapp3.1\SearchGuestsForm.baml

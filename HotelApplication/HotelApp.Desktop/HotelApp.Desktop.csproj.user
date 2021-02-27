@@ -10,12 +10,15 @@
     <Compile Update="CheckinForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="SearchGuestsForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="CheckinForm.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="SearchGuestsForm.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

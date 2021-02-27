@@ -1,15 +1,9 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
-using HotelAppLibray.Data;
+﻿using HotelAppLibray.Data;
 using HotelAppLibray.Databases;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using System.IO;
+using System.Windows;
 
 namespace HotelApp.Desktop
 {
@@ -25,7 +19,7 @@ namespace HotelApp.Desktop
             base.OnStartup(e);
 
             var services = new ServiceCollection();
-            services.AddTransient<MainWindow>();
+            services.AddTransient<SearchGuestsForm>();
             services.AddTransient<CheckinForm>();
             services.AddTransient<ISqlDataAccess, SqlDataAccess>();
             services.AddTransient<ISqliteDataAccess, SqliteDataAccess>();
@@ -54,9 +48,9 @@ namespace HotelApp.Desktop
             }
 
             serviceProvider = services.BuildServiceProvider();
-            var mainWindow = serviceProvider.GetService<MainWindow>();
+            var searchGuestsForm = serviceProvider.GetService<SearchGuestsForm>();
 
-            mainWindow.Show();
+            searchGuestsForm.Show();
 
         }
     }
