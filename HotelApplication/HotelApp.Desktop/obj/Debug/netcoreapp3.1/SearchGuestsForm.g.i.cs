@@ -77,7 +77,7 @@ namespace HotelApp.Desktop {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/HotelApp.Desktop;component/searchguestsform.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/HotelApp.Desktop;V1.0.0.0;component/searchguestsform.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\SearchGuestsForm.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
