@@ -18,7 +18,7 @@ body{
 }
 
 #display{
-    background: white;
+    background: linear-gradient(to left, blue, red);
     border-radius: 30px;
     width: 245;
     font-size: 20;
@@ -26,12 +26,12 @@ body{
     font-weight: 300;
     height: 60;
     margin: auto;
-    border: 2px solid white;
+    border: 2px solid whitesmoke;
     color: black;
 }
 
 .btnDesign{
-    background: linear-gradient(to left, blue, red);
+    background: whitesmoke;
     width: 55;
     height: 55;
     padding-top: -1;
@@ -44,7 +44,7 @@ body{
 }
 
 .operatorDesign{
-    background: linear-gradient(to left, blue, red);
+    background: whitesmoke;
     width: 55;
     height: 55;
     padding-top: -1;
@@ -59,11 +59,11 @@ body{
 
     }
     .operatorDesign:hover{
-        background: red;
+        background: linear-gradient(to left, blue, red);
     }
 
 #zeroBtnDesign{
-    background: linear-gradient(to left, blue, red);
+    background: whitesmoke;
     width: 116;
     height: 55;
     padding-top: -1;
@@ -76,12 +76,21 @@ body{
 }
 
 h1{
-    color: white;
+    color: whitesmoke;
     margin-top: 300px;
     margin-left: 100px;
     text-transform: uppercase;
     font-family: sans-serif;
     font-weight: 700px;
     font-size: 50;
-    text-decoration: blueviolet;
+    text-decoration:solid;
+}
+
+h2{
+    color: whitesmoke;
+    margin-top: -1px;
+    margin-left: 460px;
+    font-family: sans-serif;
+    font-weight: 400px;
+    font-size: 35;
 }
