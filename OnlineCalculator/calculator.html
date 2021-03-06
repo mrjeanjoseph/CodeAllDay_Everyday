@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <link rel="stylesheet" href="/css/style.css">
     <title>Calculator by Jean</title>
@@ -7,13 +6,12 @@
 
 <body>
     <!-- Header Area -->
-    <div class="heading">
-        <h2>Yon Kalkilatè!</h2>        
-    </div>
 
     <!-- Calculator Area -->
-    <div class="calc" style="background-color: azure;">
+    <div class="calc">
         <form name="form1" action="calculator.html" method="POST">
+            <h2>Yon Kalkilatè!</h2>
+
             <input type="text" name="answer" id="display">
             <br></br>
             <input type="button" class="btnDesign" value="C" onclick="form1.answer.value=''">
@@ -49,8 +47,8 @@
     </div>
 
     <!-- Calculator Area -->
-    <footer class="footer">
-        <p><a href="https://mrjeanjoseph.github.io/">By: Jean-Joseph</a> CodeAllDay!</p>
+    <footer id="footer">
+        <p><a href="https://mrjeanjoseph.github.io/">By: JeanJoseph</a> CodeAllDay!</p>
     </footer>
 
 </body>
