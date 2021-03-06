@@ -1,8 +1,8 @@
-
-
 body{
     margin: 0;
-    padding: 0;
+    padding: 10;
+    line-height: .5;
+    background: linear-gradient(to left, red, blue);
 }
 
 .calc{
@@ -14,7 +14,6 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.25px;
-    background-color: black;
     text-align: center;
 }
 
@@ -32,26 +31,28 @@ body{
 }
 
 .btnDesign{
-    background: blue;
+    background: linear-gradient(to left, blue, red);
     width: 55;
     height: 55;
     padding-top: -1;
     border: none;
     font-family: sans-serif;
     font-size: 20;
-    font-weight: 30px;
+    font-weight: 300;
+    border-radius: 30px;
     margin: 1.5;
 }
 
 .operatorDesign{
-    background: blue;
+    background: linear-gradient(to left, blue, red);
     width: 55;
     height: 55;
     padding-top: -1;
     border: none;
     font-family: sans-serif;
     font-size: 20;
-    font-weight: 30px;
+    font-weight: 300;
+    border-radius: 30px;
     margin: 1.5;
     transition: 0.25px;
     cursor: pointer;
@@ -60,3 +61,27 @@ body{
     .operatorDesign:hover{
         background: red;
     }
+
+#zeroBtnDesign{
+    background: linear-gradient(to left, blue, red);
+    width: 116;
+    height: 55;
+    padding-top: -1;
+    border: none;
+    font-family: sans-serif;
+    font-size: 20;
+    font-weight: 300;
+    border-radius: 30px;
+    margin: 1.5;
+}
+
+h1{
+    color: white;
+    margin-top: 300px;
+    margin-left: 100px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700px;
+    font-size: 50;
+    text-decoration: blueviolet;
+}
