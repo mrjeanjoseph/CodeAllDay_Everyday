@@ -23,7 +23,7 @@ namespace HotelApp.Desktop
         private void SearchForGuests_Click(object sender, RoutedEventArgs e)
         {
             List<BookingFullModel> bookings = db.SearchBookings(lastNameText.Text);
-            resultsList.ItemsSource = bookings;
+            resultsList.ItemsSource = bookings; // The issue seems to be here - 
         }
 
         private void CheckInButton_Click(object sender, RoutedEventArgs e)
