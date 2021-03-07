@@ -7,10 +7,10 @@ function autenticate() {
     var good = "https://www.youtube.com/";
 
     if (username == "user"&& enterpass == "pass"&& reenterpass == "pass") {
-            window.location = good;       
+            location.href = 'https://www.google.com/';
     }
     else {
-        window.location = failed;
+        location.href = 'https://www.youtube.com/';
     }
 }
     //=============================================
