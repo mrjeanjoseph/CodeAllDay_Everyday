@@ -48,7 +48,33 @@ body{
 }
 
 .close{
-    
+    color: whitesmoke;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header{
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: whitesmoke;
+}
+
+.modal-body{
+    padding: 2px 16px;
+}
+
+.modal-footer{
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: whitesmoke;
 }
 
 .box{
