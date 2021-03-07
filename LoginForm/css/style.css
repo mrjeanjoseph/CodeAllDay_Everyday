@@ -7,7 +7,7 @@ body{
     background-size:auto; 
 }
 
-.modal{
+.dropdown{
     /* display: none; */
     position: fixed;
     z-index: 1;
@@ -21,7 +21,7 @@ body{
     background-color: rgba(0,0,0,0.4);
 }
 
-.modal-content{
+.dropdown-content{
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -61,17 +61,17 @@ body{
     cursor: pointer;
 }
 
-.modal-header{
+.dropdown-header{
     padding: 2px 16px;
     background-color: #5cb85c;
     color: whitesmoke;
 }
 
-.modal-body{
+.dropdown-body{
     padding: 2px 16px;
 }
 
-.modal-footer{
+.dropdown-footer{
     padding: 2px 16px;
     background-color: #5cb85c;
     color: whitesmoke;
