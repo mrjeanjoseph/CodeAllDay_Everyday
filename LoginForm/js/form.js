@@ -1,38 +1,36 @@
-// popup validation box
-var dropdown = document.getElementById("myDropdown");
+// validate user login
+function autenticate() {
+    var username = document.getElementById("username").value;
+    var enterpass = document.getElementById("enterpass").value;
+    var reenterpass = document.getElementById("reenterpass").value;
+    var failed = "https://www.google.com/";
+    var good = "https://www.youtube.com/";
 
-var btn = document.getElementById("myBtn");
-
-var span =
-document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-    dropdown.style.display = "block";
+    if (username == "user"&& enterpass == "pass"&& reenterpass == "pass") {
+            window.location = good;       
+    }
+    else {
+        window.location = failed;
+    }
 }
+    //=============================================
+    // popup validation box
+    var dropdown = document.getElementById("myDropdown");
+    var btn = document.getElementById("myBtn");
+    var span =
+        document.getElementsByClassName("close")[0];
 
-span.onclick = function(){
-    dropdown.style.display = "none";
-}
+    btn.onclick = function () {
+        dropdown.style.display = "block";
+    }
 
-window.onclick = function(event){
-    if(event.target == dropdown) {
+    span.onclick = function () {
         dropdown.style.display = "none";
     }
-}
-//=============================================
 
-// validate user login
-function autenticate()
-{
-    var username=document.getElementById("username").value;
-    var enterpass=document.getElementById("enterpass").value;
-    var reenterpass=document.getElementById("reenterpass").value;
+    window.onclick = function (event) {
+        if (event.target == dropdown) {
+            dropdown.style.display = "none";
+        }
+    }
 
-    if(username=="user"&& enterpass=="password"&& reenterpass=="password"){
-        alert("login successful!");
-        return false;
-    }
-    else{
-        alert("login failed!");
-    }
-}
