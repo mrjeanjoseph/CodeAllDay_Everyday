@@ -1,4 +1,14 @@
-﻿.footerlinks {
+﻿html, body {
+    margin: 0;
+    height: 100%;
+    line-height: .5;
+}
+
+.form1{
+
+}
+
+.footerlinks {
     color: #ffffff;
     text-decoration: none !important;
 }
