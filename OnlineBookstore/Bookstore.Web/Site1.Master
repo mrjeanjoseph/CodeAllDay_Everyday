@@ -12,6 +12,8 @@
     <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
     <%--fontawsome css--%>
     <link href="fontawsome/css/all.css" rel="stylesheet" />
+    <%--customer css--%>
+    <link href="css/style.css" rel="stylesheet" />
 
     <%--jquery--%>
     <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
@@ -48,28 +50,24 @@
                         </li>
                     </ul>
 
-
-                    <ul>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton1" runat="server">View Books</asp:LinkButton>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton2" runat="server">User Login</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton3" runat="server">Sign Up</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton4" runat="server">Logout</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton5" runat="server">Hello User</asp:LinkButton>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
             </nav>
         </div>
@@ -81,8 +79,31 @@
         </div>
         <%--Main Content Placeholder--%>
 
+
+
+        <%--Footer Area--%>
         <footer>
-            <p>&copy All right reserved. <a class="footerlinks" href="#" target="_blank">DVC Enterprises LLC</a></p>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-ms-12 col-md-12 text-center">
+                        <p>
+                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton11" runat="server">Admin Login</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton12" runat="server">Author Mgmt</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton13" runat="server">Publisher Mgmt</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton14" runat="server">Book Inventory</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton15" runat="server">Book Issuing</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton16" runat="server">Member Mgmt</asp:LinkButton>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-ms-12 col-md-12 text-center">
+                        <p>&copy All right reserved. <a class="footerlinks" href="#" target="_blank">DVC Enterprises LLC</a></p>
+                    </div>
+                </div>
+            </div>
         </footer>
     </form>
 </body>
