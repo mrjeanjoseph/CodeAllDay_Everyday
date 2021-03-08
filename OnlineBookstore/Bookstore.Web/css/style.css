@@ -1,7 +1,7 @@
 ﻿html, body {
     margin: 0;
     height: 100%;
-    line-height: .5;
+    line-height: 1;
 }
 
 .form1{
@@ -9,18 +9,22 @@
 }
 
 .footerlinks {
-    color: #ffffff;
+    color: darkgreen;
     text-decoration: none !important;
 }
 
     .footerlinks:hover{
-        color: #ffd800;
+        color: olivedrab;
     }
 
 #footer1 {
-    background: #762b00;
+    background: darkgreen;
 }
 
 #footer2 {
-    background: #531f00;
+    background: olivedrab;
+}
+
+.center {
+    text-align: center;
 }
