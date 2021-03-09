@@ -12,7 +12,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col center">
-                                <img width="100" src="img/PersonIcon.png" />
+                                <img width="100" src="img/userIcon.png" />
                             </div>
                         </div>
                         <div class="row">

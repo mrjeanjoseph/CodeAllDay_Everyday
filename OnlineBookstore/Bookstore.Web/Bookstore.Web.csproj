@@ -1724,6 +1724,7 @@
     <Content Include="fontawsome\webfonts\fa-regular-400.svg" />
     <Content Include="fontawsome\webfonts\fa-solid-900.svg" />
     <Content Include="homepage.aspx" />
+    <Content Include="img\adminIcon.png" />
     <Content Include="img\agenda.png" />
     <Content Include="img\book.png" />
     <Content Include="img\home-bg.jpg" />
@@ -1736,7 +1737,7 @@
     <Content Include="img\img4.png" />
     <Content Include="img\img5.png" />
     <Content Include="img\img6.png" />
-    <Content Include="img\PersonIcon.png" />
+    <Content Include="img\userIcon.png" />
     <Content Include="userlogin.aspx" />
     <Content Include="usersignup.aspx" />
     <Content Include="Web.config" />
