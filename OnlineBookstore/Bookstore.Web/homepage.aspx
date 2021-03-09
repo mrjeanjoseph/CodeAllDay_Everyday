@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 
     <section>
         <img src="img/home-bg.jpg" class="img-fluid" />

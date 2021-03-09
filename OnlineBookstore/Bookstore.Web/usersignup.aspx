@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 
     <div class="container">
         <div class="row">
@@ -14,11 +14,13 @@
                                 <img width="75" src="img/userIcon.png" />
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col center">
                                 <h3>Registration</h3>
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col center">
                                 <hr />
@@ -144,8 +146,6 @@
                                 <br />
                             </div>
                         </div>
-
-
 
                         <div class="row">
                             <div class="col center">
