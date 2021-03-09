@@ -27,25 +27,25 @@
                                 <div class="form-group center">
                                     <asp:TextBox CssClass="form-control" ID="TextBox1" placeholder="Member ID"
                                         runat="server"></asp:TextBox>
-                                </div>
+                                </div><br />
                                 <label>Password</label>
                                 <div class="form-group center">
                                     <asp:TextBox CssClass="form-control" ID="TextBox2" placeholder="Password"
                                         runat="server" TextMode="Password"></asp:TextBox>
+                                </div><br /><hr />
+                                <div class="form-group d-grid gap-2">
+                                    <asp:Button ID="Button1" class="btn btn-success btn-block btn-lg" runat="server" Text="Login" />
+                                </div><br />
+                                <div class="form-group d-grid gap-2">
+                                    <input id="Button2" class="btn btn-info btn-block btn-lg" type="button" value="SignUp" />
                                 </div>
-                                <div class="form-group">
-                                    <asp:Button ID="Button1" class="btn btn-primary btn-block btn-lg" runat="server" Text="Login" />
-                                </div>
-
-                                <div class="form-group">
-                                    <input id="Button2" class="btn btn-info btn-block" type="button" value="SignUp" />
-                                </div>
-
                             </div>
 
                         </div>
                     </div>
-                </div>
+                <a href="homepage.aspx"><< Back to Home</a>
+                </div><br />
+
             </div>
         </div>
     </div>
