@@ -1,10 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="userprofile.aspx.cs" Inherits="Bookstore.Web.userprofile" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 
 
-        <div class="container-fluid" style="background-color:lightgreen">
+    <div class="container-fluid" style="background-color: lightgreen">
         <div class="row">
             <div class="col-md-5">
                 <div class="card">
@@ -150,9 +151,9 @@
                         </div>
 
                         <div class="row">
-                            <div class="col center">
+                            <div class="col-8 mx-auto center">
                                 <div class="form-group">
-                                    <asp:Button ID="updateBtn" class="btn btn-primary btn-lg" runat="server" Text="Update" />
+                                    <asp:Button ID="updateBtn" class="btn btn-primary btn-block btn-lg" runat="server" Text="Update" />
                                 </div>
                                 <br />
                             </div>
@@ -164,6 +165,34 @@
             </div>
 
             <div class="col-md-7">
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col center">
+                                <img width="75" src="img/book.png" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col center">
+                                <h3>Your Profile</h3>
+                                <span>Account Status</span>
+                                <asp:Label class="badge rounded-pill bg-info text-dark" ID="Label2" runat="server" Text="Your Status"></asp:Label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col center">
+                                <hr />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                    <a href="homepage.aspx"><< Back to Home</a>
+                </div>
+
+
             </div>
 
         </div>
