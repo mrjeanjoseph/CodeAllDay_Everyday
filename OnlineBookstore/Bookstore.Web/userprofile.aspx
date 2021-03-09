@@ -176,16 +176,14 @@
 
                         <div class="row">
                             <div class="col center">
-                                <h3>Your Profile</h3>
-                                <span>Account Status</span>
-                                <asp:Label class="badge rounded-pill bg-info text-dark" ID="Label2" runat="server" Text="Your Status"></asp:Label>
+                                <h3>Your issued Books</h3>
+                                <asp:Label class="badge rounded-pill bg-info text-dark" ID="Label2" runat="server" Text="Your Book Information"></asp:Label>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col center">
                                 <hr />
-                                <br />
                             </div>
                         </div>
                     </div>
