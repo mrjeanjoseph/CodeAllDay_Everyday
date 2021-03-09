@@ -7,7 +7,6 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
@@ -23,44 +22,108 @@
                         <div class="row">
                             <div class="col center">
                                 <hr />
+                                <br />
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group center">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox1" placeholder="Full Name"
+                                    <asp:TextBox class="form-control" ID="fullNameTxtBx" placeholder="Full Name"
                                         runat="server"></asp:TextBox>
                                 </div>
                                 <br />
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group center">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox2" placeholder="Date of Birth"
+                                    <asp:TextBox class="form-control" ID="birthDateTxtBx" placeholder="Date of Birth"
                                         runat="server" TextMode="Date"></asp:TextBox>
                                 </div>
                                 <br />
                             </div>
                         </div>
 
-
                         <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <asp:Button ID="Button1" class="btn btn-success btn-block btn-lg" runat="server" Text="Login" />
+                            <div class="col-md-6">
+                                <div class="form-group center">
+                                    <asp:TextBox class="form-control" ID="phoneNumberTxtBx" placeholder="Phone Number"
+                                        runat="server" TextMode="Phone"></asp:TextBox>
                                 </div>
                                 <br />
-                                <div class="form-group">
-                                    <a href="usersignup.aspx">
-                                        <input id="Button2" class="btn btn-info btn-block btn-lg" type="button" value="SignUp" /></a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group center">
+                                    <asp:TextBox class="form-control" ID="emailTxtBx" placeholder="Email"
+                                        runat="server" TextMode="Email"></asp:TextBox>
                                 </div>
+                                <br />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group center">
+                                    <asp:TextBox class="form-control" ID="addressTxtBx1" placeholder="Street Address 1"
+                                        runat="server"></asp:TextBox>
+                                </div>
+                                <br />
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group center">
+                                    <asp:TextBox class="form-control" ID="addressTxtBx2" placeholder="Street Address 2"
+                                        runat="server"></asp:TextBox>
+                                </div>
+                                <br />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group center">
+                                    <asp:DropDownList class="form-control" ID="DropDownList1" runat="server">
+                                        <asp:ListItem Text="--Select--" Value="select"/>
+                                        <asp:ListItem Text="Haiti" Value="LAS"/>
+                                        <asp:ListItem Text="North Carolina" Value="NC"/>
+                                        <asp:ListItem Text="South Carolina" Value="SC"/>
+                                        <asp:ListItem Text="Virginia" Value="VA"/>
+                                        <asp:ListItem Text="Florida" Value="FL"/>
+                                        <asp:ListItem Text="Georgia" Value="GA"/>
+                                        <asp:ListItem Text="Tennessee" Value="TN"/>
+                                        <asp:ListItem Text="West Virginia" Value="WV"/>
+                                        <asp:ListItem Text="Texas" Value="TX"/>
+                                        <asp:ListItem Text="California" Value="CA"/>
+                                    </asp:DropDownList>
+                                </div>
+                                <br />
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group center">
+                                    <asp:TextBox class="form-control" ID="cityTxtBx" placeholder="City"
+                                        runat="server"></asp:TextBox>
+                                </div>
+                                <br />
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group center">
+                                    <asp:TextBox class="form-control" ID="zipcodeTxtBx" placeholder="ZipCode"
+                                        runat="server" TextMode="Number"></asp:TextBox>
+                                </div>
+                                <br />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <asp:Button ID="loginBtn" class="btn btn-success btn-block btn-lg" runat="server" Text="Login" />
+                                </div>
+                                <br />
                             </div>
                         </div>
                     </div>
                     <a href="homepage.aspx"><< Back to Home</a>
                 </div>
                 <br />
-
             </div>
         </div>
     </div>
