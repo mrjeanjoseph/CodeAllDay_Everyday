@@ -186,13 +186,16 @@
                                 <hr />
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col center">
+                                <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+                            </div>
+                        </div>
                     </div>
                     <a href="homepage.aspx"><< Back to Home</a>
                 </div>
-
-
-            </div>
-
+            </div><br />
         </div>
     </div>
 
