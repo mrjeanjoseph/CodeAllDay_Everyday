@@ -2,9 +2,8 @@
     margin: 0;
     height: 100%;
     line-height: 1;
-}
-
-.form1{
+    /*background: linear-gradient(to left, lightgreen, whitesmoke);*/
+    /*background: radial-gradient(to left, lightgreen, whitesmoke);*/
 
 }
 
@@ -13,7 +12,7 @@
     text-decoration: none !important;
 }
 
-    .footerlinks:hover{
+    .footerlinks:hover {
         color: olivedrab;
     }
 

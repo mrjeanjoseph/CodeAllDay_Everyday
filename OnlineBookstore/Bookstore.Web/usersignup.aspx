@@ -81,17 +81,17 @@
                             <div class="col-md-4">
                                 <div class="form-group center">
                                     <asp:DropDownList class="form-control" ID="DropDownList1" runat="server">
-                                        <asp:ListItem Text="--Select--" Value="select"/>
-                                        <asp:ListItem Text="Haiti" Value="LAS"/>
-                                        <asp:ListItem Text="North Carolina" Value="NC"/>
-                                        <asp:ListItem Text="South Carolina" Value="SC"/>
-                                        <asp:ListItem Text="Virginia" Value="VA"/>
-                                        <asp:ListItem Text="Florida" Value="FL"/>
-                                        <asp:ListItem Text="Georgia" Value="GA"/>
-                                        <asp:ListItem Text="Tennessee" Value="TN"/>
-                                        <asp:ListItem Text="West Virginia" Value="WV"/>
-                                        <asp:ListItem Text="Texas" Value="TX"/>
-                                        <asp:ListItem Text="California" Value="CA"/>
+                                        <asp:ListItem Text="--Select--" Value="select" />
+                                        <asp:ListItem Text="Haiti" Value="LAS" />
+                                        <asp:ListItem Text="North Carolina" Value="NC" />
+                                        <asp:ListItem Text="South Carolina" Value="SC" />
+                                        <asp:ListItem Text="Virginia" Value="VA" />
+                                        <asp:ListItem Text="Florida" Value="FL" />
+                                        <asp:ListItem Text="Georgia" Value="GA" />
+                                        <asp:ListItem Text="Tennessee" Value="TN" />
+                                        <asp:ListItem Text="West Virginia" Value="WV" />
+                                        <asp:ListItem Text="Texas" Value="TX" />
+                                        <asp:ListItem Text="California" Value="CA" />
                                     </asp:DropDownList>
                                 </div>
                                 <br />
@@ -113,9 +113,44 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-2">
+                            <div class="col">
+                                <div class="form-group center">
+                                    <span class="badge rounded-pill bg-success">Please Create a username and password</span>
+                                </div>
+                                <br />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group center">
+                                    <asp:TextBox class="form-control" ID="userNameTxtBx" placeholder="Username"
+                                        runat="server"></asp:TextBox>
+                                </div>
+                                <br />
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group center">
+                                    <asp:TextBox class="form-control" ID="passwordTxtBx" placeholder="Password"
+                                        runat="server" TextMode="Password"></asp:TextBox>
+                                </div>
+                                <br />
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group center">
+                                    <asp:TextBox class="form-control" ID="confirmPassTxtBx" placeholder="Confirm Password"
+                                        runat="server" TextMode="Password"></asp:TextBox>
+                                </div>
+                                <br />
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col center">
                                 <div class="form-group">
-                                    <asp:Button ID="loginBtn" class="btn btn-success btn-block btn-lg" runat="server" Text="Login" />
+                                    <asp:Button ID="registerBtn" class="btn btn-success btn-block btn-lg" runat="server" Text="Register" />
                                 </div>
                                 <br />
                             </div>

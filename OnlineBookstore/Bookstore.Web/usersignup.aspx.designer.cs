@@ -96,12 +96,39 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.TextBox zipcodeTxtBx;
 
         /// <summary>
-        /// loginBtn control.
+        /// userNameTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button loginBtn;
+        protected global::System.Web.UI.WebControls.TextBox userNameTxtBx;
+
+        /// <summary>
+        /// passwordTxtBx control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox passwordTxtBx;
+
+        /// <summary>
+        /// confirmPassTxtBx control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox confirmPassTxtBx;
+
+        /// <summary>
+        /// registerBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button registerBtn;
     }
 }
