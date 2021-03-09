@@ -37,7 +37,7 @@
                                     <asp:Button ID="Button1" class="btn btn-success btn-block btn-lg" runat="server" Text="Login" />
                                 </div><br />
                                 <div class="form-group d-grid gap-2">
-                                    <input id="Button2" class="btn btn-info btn-block btn-lg" type="button" value="SignUp" />
+                                    <a href="usersignup.aspx"><input id="Button2" class="btn btn-info btn-block btn-lg" type="button" value="SignUp" /></a>
                                 </div>
                             </div>
 
