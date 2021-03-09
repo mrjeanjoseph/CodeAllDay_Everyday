@@ -21,7 +21,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col">
+                            <div class="col"> 
                                 <div class="form-group center">
                                     <asp:TextBox CssClass="form-control" ID="TextBox1" placeholder="Admin ID"
                                         runat="server"></asp:TextBox>
