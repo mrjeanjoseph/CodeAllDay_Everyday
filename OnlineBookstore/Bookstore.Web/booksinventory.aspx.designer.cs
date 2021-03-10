@@ -51,13 +51,31 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.TextBox bookNameTxtBx;
 
         /// <summary>
-        /// birthDateTxtBx control.
+        /// languageDL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox birthDateTxtBx;
+        protected global::System.Web.UI.WebControls.DropDownList languageDL;
+
+        /// <summary>
+        /// publisherNameDL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList publisherNameDL;
+
+        /// <summary>
+        /// authorNameDL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList authorNameDL;
 
         /// <summary>
         /// contactNumTxtBx control.

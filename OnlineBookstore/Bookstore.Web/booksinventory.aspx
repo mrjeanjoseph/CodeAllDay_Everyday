@@ -30,7 +30,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col center">                                
+                            <div class="col center">
                                 <asp:FileUpload CssClass="form-control" ID="FileUpload1" runat="server" />
                                 <br />
                             </div>
@@ -58,12 +58,43 @@
 
                         <div class="row">
                             <div class="col-md-4">
+                                <label>Language</label>
                                 <div class="form-group center">
-                                    <asp:TextBox class="form-control" ID="birthDateTxtBx" placeholder="DoB" runat="server" ReadOnly="True"></asp:TextBox>
-
+                                    <asp:DropDownList class="form-control" ID="languageDL" runat="server">
+                                        <asp:ListItem Text="English" Value="English" />
+                                        <asp:ListItem Text="Creole" Value="Creole" />
+                                        <asp:ListItem Text="French" Value="French" />
+                                        <asp:ListItem Text="Spanish" Value="Spanish" />
+                                        <asp:ListItem Text="Chinese" Value="Chinese" />
+                                    </asp:DropDownList>
                                 </div>
                                 <br />
                             </div>
+
+                            <div class="col-md-4">
+                                <label>Publisher Name</label>
+                                <div class="form-group center">
+                                    <asp:DropDownList class="form-control" ID="publisherNameDL" runat="server">
+                                        <asp:ListItem Text="Publisher1" Value="Publisher1" />
+                                        <asp:ListItem Text="Publisher2" Value="Publisher2" />
+                                    </asp:DropDownList>
+                                </div>
+                                <br />
+                            </div>
+
+                            <div class="col-md-4">
+                                <label>Author Name</label>
+                                <div class="form-group center">
+                                    <asp:DropDownList class="form-control" ID="authorNameDL" runat="server">
+                                        <asp:ListItem Text="Author1" Value="Author1" />
+                                        <asp:ListItem Text="Author2" Value="Author2" />
+                                    </asp:DropDownList>
+                                </div>
+                                <br />
+                            </div>
+
+
+
                             <div class="col-md-4">
                                 <div class="form-group center">
                                     <div class="input-group">
