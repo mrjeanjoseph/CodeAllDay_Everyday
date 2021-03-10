@@ -11,17 +11,26 @@ namespace Bookstore.Web
 {
 
 
-    public partial class publisherlogin
+    public partial class issuedbooks
     {
 
         /// <summary>
-        /// publisherIdTxtBx control.
+        /// memberIdTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox publisherIdTxtBx;
+        protected global::System.Web.UI.WebControls.TextBox memberIdTxtBx;
+
+        /// <summary>
+        /// bookIdTxtBx control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox bookIdTxtBx;
 
         /// <summary>
         /// searchBtn control.
@@ -33,40 +42,58 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.Button searchBtn;
 
         /// <summary>
-        /// publisherNameTxtBx control.
+        /// membernameTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox publisherNameTxtBx;
+        protected global::System.Web.UI.WebControls.TextBox membernameTxtBx;
 
         /// <summary>
-        /// addBtn control.
+        /// bookNameTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addBtn;
+        protected global::System.Web.UI.WebControls.TextBox bookNameTxtBx;
 
         /// <summary>
-        /// updateBtn control.
+        /// startDateTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button updateBtn;
+        protected global::System.Web.UI.WebControls.TextBox startDateTxtBx;
 
         /// <summary>
-        /// deleteBtn control.
+        /// endDateTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button deleteBtn;
+        protected global::System.Web.UI.WebControls.TextBox endDateTxtBx;
+
+        /// <summary>
+        /// issuedBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button issuedBtn;
+
+        /// <summary>
+        /// returnBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button returnBtn;
 
         /// <summary>
         /// GridView1 control.

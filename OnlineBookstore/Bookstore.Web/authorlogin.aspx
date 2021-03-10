@@ -41,7 +41,7 @@
                             </div>
                             <div class="col-md-7">
                                 <div class="form-group center">
-                                    <asp:TextBox class="form-control" ID="authorNameTxtBx" placeholder="Author First & Last Name"
+                                    <asp:TextBox class="form-control" ID="authorNameTxtBx" placeholder="Author Full Name"
                                         runat="server"></asp:TextBox>
                                 </div>
                                 <br />
@@ -65,7 +65,7 @@
                 <br />
             </div>
 
-            <div class="col-md-7" style="background-color:aquamarine">
+            <div class="col-md-7">
 
                 <div class="card">
                     <div class="card-body">
@@ -94,7 +94,6 @@
                             </div>
                         </div>
                     </div>
-                    <a href="homepage.aspx"><< Back to Home</a>
                 </div>
             </div>
             <br />

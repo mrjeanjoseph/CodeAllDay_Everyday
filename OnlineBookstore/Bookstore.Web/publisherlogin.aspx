@@ -11,7 +11,7 @@
 
                         <div class="row">
                             <div class="col center">
-                                <h3>Author Details</h3>
+                                <h3>Publisher Details</h3>
                             </div>
                         </div>
 
@@ -32,7 +32,7 @@
                             <div class="col-md-5">
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="authorIdTxtBx" placeholder="Author Id" runat="server"></asp:TextBox>
+                                        <asp:TextBox class="form-control" ID="publisherIdTxtBx" placeholder="Publisher Id" runat="server"></asp:TextBox>
                                         <asp:Button ID="searchBtn" class="btn btn-primary" runat="server" Text="Search" />
                                     </div>
                                 </div>
@@ -40,7 +40,7 @@
                             </div>
                             <div class="col-md-7">
                                 <div class="form-group center">
-                                    <asp:TextBox class="form-control" ID="authorNameTxtBx" placeholder="Author First & Last Name"
+                                    <asp:TextBox class="form-control" ID="publisherNameTxtBx" placeholder="Publisher Full Name"
                                         runat="server"></asp:TextBox>
                                 </div>
                                 <br />
@@ -64,8 +64,7 @@
                 <br />
             </div>
 
-            <div class="col-md-7" style="background-color:aquamarine">
-
+            <div class="col-md-7">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
@@ -76,7 +75,7 @@
 
                         <div class="row">
                             <div class="col center">
-                                <h3>Author Lists</h3>
+                                <h3>Publisher Lists</h3>
                             </div>
                         </div>
 
@@ -93,7 +92,6 @@
                             </div>
                         </div>
                     </div>
-                    <a href="homepage.aspx"><< Back to Home</a>
                 </div>
             </div>
             <br />

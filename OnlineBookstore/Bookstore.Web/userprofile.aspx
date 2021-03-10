@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 
 
-    <div class="container-fluid" style="background-color: lightgreen"> 
+    <div class="container-fluid"> 
         <div class="row">
             <div class="col-md-5">
                 <div class="card">
@@ -194,7 +194,6 @@
                             </div>
                         </div>
                     </div>
-                    <a href="homepage.aspx"><< Back to Home</a>
                 </div>
             </div><br />
         </div>

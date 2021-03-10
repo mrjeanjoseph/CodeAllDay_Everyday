@@ -38,8 +38,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group center">
-                                    <asp:TextBox class="form-control" ID="birthDateTxtBx" placeholder="Date of Birth"
-                                        runat="server" TextMode="Date"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="birthDateTxtBx" placeholder="Date of Birth" runat="server" TextMode="Date"></asp:TextBox>
                                 </div>
                                 <br />
                             </div>
