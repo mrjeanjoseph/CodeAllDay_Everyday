@@ -34,7 +34,7 @@
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="memberIdTxtBx" placeholder="Id" runat="server"></asp:TextBox>
-                                        <asp:Button ID="searchBtn" class="btn btn-primary" runat="server" Text="Search" />
+                                        <asp:LinkButton ID="searchLBtn" CssClass="btn btn-primary" runat="server"><i class="fas fa-search"></i></asp:LinkButton>
                                     </div>
                                 </div>
                                 <br />
@@ -50,10 +50,14 @@
                             <div class="col-md-5">
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="statusTxtBx" placeholder="Status" runat="server"></asp:TextBox>
-                                        <asp:Button ID="statusBtnA" class="btn btn-primary" runat="server" Text="A" />
-                                        <asp:Button ID="statusBtnP" class="btn btn-warning" runat="server" Text="P" />
-                                        <asp:Button ID="statusBtnD" class="btn btn-danger" runat="server" Text="D" />
+                                        <asp:TextBox class="form-control mr-1" ID="statusTxtBx" placeholder="Status" runat="server" ReadOnly="True"></asp:TextBox>
+                                        
+                                        <asp:LinkButton ID="userActiveBtn" class="btn btn-success mr-1" runat="server"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                                        
+                                        <asp:LinkButton ID="userPendingBtn" class="btn btn-warning mr-1" runat="server"><i class="far fa-pause-circle"></i></asp:LinkButton>
+                                        
+                                        <asp:LinkButton ID="userDeleteBtn" class="btn btn-danger mr-1" runat="server"><i class="fas fa-trash-alt"></i></asp:LinkButton>
+
                                     </div>
                                 </div>
                                 <br />

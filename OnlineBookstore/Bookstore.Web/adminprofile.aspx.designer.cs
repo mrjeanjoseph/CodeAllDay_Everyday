@@ -24,13 +24,13 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.TextBox memberIdTxtBx;
 
         /// <summary>
-        /// searchBtn control.
+        /// searchLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button searchBtn;
+        protected global::System.Web.UI.WebControls.LinkButton searchLBtn;
 
         /// <summary>
         /// memberNameTxtBx control.
@@ -51,31 +51,31 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.TextBox statusTxtBx;
 
         /// <summary>
-        /// statusBtnA control.
+        /// userActiveBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button statusBtnA;
+        protected global::System.Web.UI.WebControls.LinkButton userActiveBtn;
 
         /// <summary>
-        /// statusBtnP control.
+        /// userPendingBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button statusBtnP;
+        protected global::System.Web.UI.WebControls.LinkButton userPendingBtn;
 
         /// <summary>
-        /// statusBtnD control.
+        /// userDeleteBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button statusBtnD;
+        protected global::System.Web.UI.WebControls.LinkButton userDeleteBtn;
 
         /// <summary>
         /// membernameTxtBx2 control.
