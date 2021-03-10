@@ -44,7 +44,7 @@
                                 <br />
                                 <div class="center">
                                     <div class="form-group">
-                                        <asp:Button ID="Login" class="btn btn-success btn-block btn-lg" runat="server" Text="Login" />
+                                        <asp:Button ID="Login" class="btn btn-success w-50 btn-lg" runat="server" Text="Login" />
                                     </div>
                                     <br />
                                 </div>

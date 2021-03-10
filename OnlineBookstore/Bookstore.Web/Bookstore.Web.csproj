@@ -1727,6 +1727,7 @@
     <Content Include="homepage.aspx" />
     <Content Include="img\adminIcon.png" />
     <Content Include="img\agenda.png" />
+    <Content Include="img\authorIcon.png" />
     <Content Include="img\book.png" />
     <Content Include="img\home-bg.jpg" />
     <Content Include="img\home-bg2.jpg" />

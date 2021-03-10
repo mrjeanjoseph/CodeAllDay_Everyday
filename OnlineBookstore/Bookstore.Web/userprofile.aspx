@@ -153,7 +153,7 @@
                         <div class="row">
                             <div class="col-8 mx-auto center">
                                 <div class="form-group">
-                                    <asp:Button ID="updateBtn" class="btn btn-primary btn-block btn-lg" runat="server" Text="Update" />
+                                    <asp:Button ID="updateBtn" class="btn btn-primary w-100" runat="server" Text="Update" />
                                 </div>
                                 <br />
                             </div>
