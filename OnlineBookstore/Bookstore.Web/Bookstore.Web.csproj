@@ -1728,6 +1728,7 @@
     <Content Include="img\adminIcon.png" />
     <Content Include="img\agenda.png" />
     <Content Include="img\authorIcon.png" />
+    <Content Include="img\authorListIcon.png" />
     <Content Include="img\book.png" />
     <Content Include="img\home-bg.jpg" />
     <Content Include="img\home-bg2.jpg" />
@@ -1739,6 +1740,7 @@
     <Content Include="img\img4.png" />
     <Content Include="img\img5.png" />
     <Content Include="img\img6.png" />
+    <Content Include="img\publisherIcon.png" />
     <Content Include="img\userIcon.png" />
     <Content Include="publisherlogin.aspx" />
     <Content Include="userlogin.aspx" />

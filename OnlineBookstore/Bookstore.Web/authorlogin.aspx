@@ -6,7 +6,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <div class="card">
                     <div class="card-body">
 
@@ -50,7 +50,7 @@
 
                         <div class="row mr-auto">
                             <div class="col-4">
-                                <asp:Button ID="addBtn" class="btn btn-primary w-100" runat="server" Text="Add" />
+                                <asp:Button ID="addBtn" class="btn btn-success w-100" runat="server" Text="Add" />
                             </div>
                             <div class="col">
                                 <asp:Button ID="updateBtn" class="btn btn-warning w-100" runat="server" Text="Update" />
@@ -65,20 +65,19 @@
                 <br />
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-7" style="background-color:aquamarine">
 
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
                             <div class="col center">
-                                <img width="75" src="img/book.png" />
+                                <img width="75" src="img/authorListIcon.png" />
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col center">
-                                <h3>Your issued Books</h3>
-                                <asp:Label class="badge rounded-pill bg-info text-dark" ID="Label2" runat="server" Text="Your Book Information"></asp:Label>
+                                <h3>Author Lists</h3>
                             </div>
                         </div>
 

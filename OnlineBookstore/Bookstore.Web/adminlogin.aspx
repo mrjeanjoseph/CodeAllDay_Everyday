@@ -21,32 +21,36 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col"> 
+                            <div class="col-md-6">
                                 <div class="form-group center">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox1" placeholder="Admin ID"
+                                    <asp:TextBox CssClass="form-control" ID="adminId" placeholder="Admin ID"
                                         runat="server"></asp:TextBox>
                                 </div>
-                                <br />
+                            </div>
+                            <div class="col-md-6">
                                 <div class="form-group center">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox2" placeholder="Password"
+                                    <asp:TextBox CssClass="form-control" ID="adminPass" placeholder="Password"
                                         runat="server" TextMode="Password"></asp:TextBox>
                                 </div>
-                                <br />
-                                <hr />
-                                <div class="form-group d-grid gap-2">
-                                    <asp:Button ID="Button1" class="btn btn-success sw-50 btn-lg" runat="server" Text="Login" />
-                                </div>
-                                <br />
                             </div>
-
+                            <br />
                         </div>
                     </div>
-                    <a href="homepage.aspx"><< Back to Home</a>
+                    <div class="row">
+                        <div class="col center">
+                            <div class="form-group">
+                                <asp:Button ID="loginBtn1" class="btn btn-success w-50 btn-lg" runat="server" Text="Login" />
+                            </div>
+                            <br />
+                        </div>
+                    </div>
                 </div>
-                <br />
-
+                <a href="homepage.aspx"><< Back to Home</a>
             </div>
+            <br />
+
         </div>
+    </div>
     </div>
 
 </asp:Content>
