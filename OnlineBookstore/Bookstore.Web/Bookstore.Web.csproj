@@ -68,8 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="adminlogin.aspx" />
-    <Content Include="adminprofile.aspx" />
+    <Content Include="AdminMemberProfile.aspx" />
     <Content Include="authorprofile.aspx" />
+    <Content Include="booksinventory.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery-3.5.1.slim.min.js" />
@@ -1761,12 +1762,12 @@
     <Compile Include="adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="adminprofile.aspx.cs">
-      <DependentUpon>adminprofile.aspx</DependentUpon>
+    <Compile Include="AdminMemberProfile.aspx.cs">
+      <DependentUpon>AdminMemberProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="adminprofile.aspx.designer.cs">
-      <DependentUpon>adminprofile.aspx</DependentUpon>
+    <Compile Include="AdminMemberProfile.aspx.designer.cs">
+      <DependentUpon>AdminMemberProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="authorprofile.aspx.cs">
       <DependentUpon>authorprofile.aspx</DependentUpon>
@@ -1774,6 +1775,13 @@
     </Compile>
     <Compile Include="authorprofile.aspx.designer.cs">
       <DependentUpon>authorprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="booksinventory.aspx.cs">
+      <DependentUpon>booksinventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="booksinventory.aspx.designer.cs">
+      <DependentUpon>booksinventory.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>

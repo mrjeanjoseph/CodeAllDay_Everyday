@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Admin/Mgmt Profile" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="adminprofile.aspx.cs" Inherits="Bookstore.Web.adminprofile" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="booksinventory.aspx.cs" Inherits="Bookstore.Web.booksinventory" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -12,13 +12,13 @@
 
                         <div class="row">
                             <div class="col center">
-                                <h3>Admin Profile</h3>
+                                <h4>Books Details</h4>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col center">
-                                <img width="75" src="img/adminIcon2.png" />
+                                <img width="100" src="img/bunchofBook.png" />
                             </div>
                         </div>
 
@@ -30,35 +30,26 @@
                         </div>
 
                         <div class="row">
+                            <div class="col center">                                
+                                <asp:FileUpload CssClass="form-control" ID="FileUpload1" runat="server" />
+                                <br />
+                            </div>
+                        </div>
+
+
+                        <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="memberIdTxtBx" placeholder="Id" runat="server" ReadOnly="True"></asp:TextBox><asp:LinkButton ID="searchLBtn" CssClass="btn btn-primary" runat="server"><i class="fas fa-search"></i></asp:LinkButton>
+                                        <asp:TextBox class="form-control" ID="BookIdTxtBx" placeholder="Book Id" runat="server"></asp:TextBox><asp:LinkButton ID="searchLBtn" CssClass="btn btn-primary" runat="server"><i class="fas fa-search"></i></asp:LinkButton>
                                     </div>
                                 </div>
                                 <br />
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-9">
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="memberNameTxtBx" placeholder="Member Name" runat="server" ReadOnly="True"></asp:TextBox>
-                                    </div>
-                                </div>
-                                <br />
-                            </div>
-
-                            <%--The Margin between the three linked buttons are not padded. Look into that!--%>
-                            <div class="col-md-5">
-                                <div class="form-group center">
-                                    <div class="input-group">
-                                        <asp:TextBox CssClass="form-control mr-1" ID="statusTxtBx" placeholder="Status" runat="server" ReadOnly="True"></asp:TextBox>
-
-                                        <asp:LinkButton ID="userActiveBtn" class="btn btn-success mr-1" runat="server"><i class="fas fa-check-circle"></i></asp:LinkButton>
-
-                                        <asp:LinkButton ID="userPendingBtn" class="btn btn-warning mr-1" runat="server"><i class="far fa-pause-circle"></i></asp:LinkButton>
-
-                                        <asp:LinkButton ID="userDeleteBtn" class="btn btn-danger mr-1" runat="server"><i class="fas fa-trash-alt"></i></asp:LinkButton>
-
+                                        <asp:TextBox class="form-control" ID="bookNameTxtBx" placeholder="Book Name" runat="server"></asp:TextBox>
                                     </div>
                                 </div>
                                 <br />
@@ -66,7 +57,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="form-group center">
                                     <asp:TextBox class="form-control" ID="birthDateTxtBx" placeholder="DoB" runat="server" ReadOnly="True"></asp:TextBox>
 
@@ -81,7 +72,7 @@
                                 </div>
                                 <br />
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-4">
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="emailTxtBx" placeholder="Email" runat="server" ReadOnly="True"></asp:TextBox>
@@ -180,6 +171,5 @@
             <br />
         </div>
     </div>
-
 
 </asp:Content>
