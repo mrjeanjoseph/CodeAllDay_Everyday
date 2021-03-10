@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Admin Profile" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="adminprofile.aspx.cs" Inherits="Bookstore.Web.adminprofile" %>
+﻿<%@ Page Title="Admin/Mgmt Profile" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="adminprofile.aspx.cs" Inherits="Bookstore.Web.adminprofile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -30,18 +30,30 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-3">
                                 <div class="form-group center">
-                                    <asp:TextBox class="form-control" ID="memberIdTxtBx" placeholder="Member Id"
-                                        runat="server"></asp:TextBox>
+                                    <div class="input-group">
+                                        <asp:TextBox class="form-control" ID="memberIdTxtBx" placeholder="Id" runat="server"></asp:TextBox>
+                                        <asp:Button ID="searchBtn" class="btn btn-primary" runat="server" Text="Search" />
+                                    </div>
                                 </div>
                                 <br />
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="bookIdTxtBx" placeholder="Book Id" runat="server"></asp:TextBox>
-                                        <asp:Button ID="searchBtn" class="btn btn-primary" runat="server" Text="Search" />
+                                        <asp:TextBox class="form-control" ID="memberNameTxtBx" placeholder="Member Name" runat="server"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group center">
+                                    <div class="input-group">
+                                        <asp:TextBox class="form-control" ID="statusTxtBx" placeholder="Status" runat="server"></asp:TextBox>
+                                        <asp:Button ID="statusBtnA" class="btn btn-primary" runat="server" Text="A" />
+                                        <asp:Button ID="statusBtnP" class="btn btn-warning" runat="server" Text="P" />
+                                        <asp:Button ID="statusBtnD" class="btn btn-danger" runat="server" Text="D" />
                                     </div>
                                 </div>
                                 <br />
@@ -51,8 +63,8 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group center">
-                                    <asp:TextBox class="form-control" ID="membernameTxtBx" placeholder="Member Name"
-                                        runat="server" ReadOnly="True"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="membernameTxtBx2" placeholder="Member Name" runat="server" ReadOnly="True"></asp:TextBox>
+
                                 </div>
                                 <br />
                             </div>
@@ -96,7 +108,6 @@
                 </div>
                 <br />
             </div>
-
             <div class="col-md-7">
 
                 <div class="card">
@@ -131,5 +142,6 @@
             <br />
         </div>
     </div>
+
 
 </asp:Content>

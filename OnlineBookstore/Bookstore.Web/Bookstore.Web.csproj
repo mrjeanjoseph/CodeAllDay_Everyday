@@ -1727,6 +1727,7 @@
     <Content Include="fontawsome\webfonts\fa-solid-900.svg" />
     <Content Include="homepage.aspx" />
     <Content Include="img\adminIcon.png" />
+    <Content Include="img\adminIcon2.png" />
     <Content Include="img\agenda.png" />
     <Content Include="img\authorIcon.png" />
     <Content Include="img\authorListIcon.png" />

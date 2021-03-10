@@ -24,15 +24,6 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.TextBox memberIdTxtBx;
 
         /// <summary>
-        /// bookIdTxtBx control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox bookIdTxtBx;
-
-        /// <summary>
         /// searchBtn control.
         /// </summary>
         /// <remarks>
@@ -42,13 +33,58 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.Button searchBtn;
 
         /// <summary>
-        /// membernameTxtBx control.
+        /// memberNameTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox membernameTxtBx;
+        protected global::System.Web.UI.WebControls.TextBox memberNameTxtBx;
+
+        /// <summary>
+        /// statusTxtBx control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox statusTxtBx;
+
+        /// <summary>
+        /// statusBtnA control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button statusBtnA;
+
+        /// <summary>
+        /// statusBtnP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button statusBtnP;
+
+        /// <summary>
+        /// statusBtnD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button statusBtnD;
+
+        /// <summary>
+        /// membernameTxtBx2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox membernameTxtBx2;
 
         /// <summary>
         /// bookNameTxtBx control.
