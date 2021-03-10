@@ -51,58 +51,49 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.TextBox bookNameTxtBx;
 
         /// <summary>
-        /// languageDL control.
+        /// languageDDL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList languageDL;
+        protected global::System.Web.UI.WebControls.DropDownList languageDDL;
 
         /// <summary>
-        /// publisherNameDL control.
+        /// publisherDDL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList publisherNameDL;
+        protected global::System.Web.UI.WebControls.DropDownList publisherDDL;
 
         /// <summary>
-        /// authorNameDL control.
+        /// authorNameDDL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList authorNameDL;
+        protected global::System.Web.UI.WebControls.DropDownList authorNameDDL;
 
         /// <summary>
-        /// contactNumTxtBx control.
+        /// publisherDateTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox contactNumTxtBx;
+        protected global::System.Web.UI.WebControls.TextBox publisherDateTxtBx;
 
         /// <summary>
-        /// emailTxtBx control.
+        /// ListBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox emailTxtBx;
-
-        /// <summary>
-        /// addressTxtBx1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox addressTxtBx1;
+        protected global::System.Web.UI.WebControls.ListBox ListBox1;
 
         /// <summary>
         /// addressTxtBx2 control.
@@ -112,33 +103,6 @@ namespace Bookstore.Web
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox addressTxtBx2;
-
-        /// <summary>
-        /// cityTxtBx control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox cityTxtBx;
-
-        /// <summary>
-        /// stateTxtBx control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox stateTxtBx;
-
-        /// <summary>
-        /// zipCodeTxtBx control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox zipCodeTxtBx;
 
         /// <summary>
         /// deletePBtn control.

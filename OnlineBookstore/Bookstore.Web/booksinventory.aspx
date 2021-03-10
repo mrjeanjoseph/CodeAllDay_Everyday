@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="booksinventory.aspx.cs" Inherits="Bookstore.Web.booksinventory" %>
+﻿<%@ Page Title="Book Details" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="booksinventory.aspx.cs" Inherits="Bookstore.Web.booksinventory" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -31,11 +31,10 @@
 
                         <div class="row">
                             <div class="col center">
-                                <asp:FileUpload CssClass="form-control" ID="FileUpload1" runat="server" />
+                                <asp:FileUpload class="form-control" ID="FileUpload1" runat="server" />
                                 <br />
                             </div>
                         </div>
-
 
                         <div class="row">
                             <div class="col-md-3">
@@ -56,11 +55,12 @@
                             </div>
                         </div>
 
+
                         <div class="row">
                             <div class="col-md-4">
                                 <label>Language</label>
                                 <div class="form-group center">
-                                    <asp:DropDownList class="form-control" ID="languageDL" runat="server">
+                                    <asp:DropDownList class="form-control" ID="languageDDL" runat="server">
                                         <asp:ListItem Text="English" Value="English" />
                                         <asp:ListItem Text="Creole" Value="Creole" />
                                         <asp:ListItem Text="French" Value="French" />
@@ -69,12 +69,10 @@
                                     </asp:DropDownList>
                                 </div>
                                 <br />
-                            </div>
 
-                            <div class="col-md-4">
                                 <label>Publisher Name</label>
                                 <div class="form-group center">
-                                    <asp:DropDownList class="form-control" ID="publisherNameDL" runat="server">
+                                    <asp:DropDownList class="form-control" ID="publisherDDL" runat="server">
                                         <asp:ListItem Text="Publisher1" Value="Publisher1" />
                                         <asp:ListItem Text="Publisher2" Value="Publisher2" />
                                     </asp:DropDownList>
@@ -83,46 +81,54 @@
                             </div>
 
                             <div class="col-md-4">
-                                <label>Author Name</label>
+                                <label>Authorname</label>
                                 <div class="form-group center">
-                                    <asp:DropDownList class="form-control" ID="authorNameDL" runat="server">
+                                    <asp:DropDownList class="form-control" ID="authorNameDDL" runat="server">
                                         <asp:ListItem Text="Author1" Value="Author1" />
                                         <asp:ListItem Text="Author2" Value="Author2" />
                                     </asp:DropDownList>
                                 </div>
                                 <br />
-                            </div>
 
-
-
-                            <div class="col-md-4">
+                                <label>Publisher Date</label>
                                 <div class="form-group center">
-                                    <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="contactNumTxtBx" placeholder="Contact No." runat="server" ReadOnly="True"></asp:TextBox>
-                                    </div>
+                                    <asp:TextBox class="form-control" ID="publisherDateTxtBx" runat="server" TextMode="Date"></asp:TextBox>
                                 </div>
                                 <br />
                             </div>
+
                             <div class="col-md-4">
+                                <label>Publisher Date</label>
                                 <div class="form-group center">
-                                    <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="emailTxtBx" placeholder="Email" runat="server" ReadOnly="True"></asp:TextBox>
-                                    </div>
+                                    <asp:ListBox ID="ListBox1" class="form-control" runat="server" SelectionMode="Multiple" Rows="4">
+                                        <asp:ListItem Text="Adventure" Value="Adventure" />
+                                        <asp:ListItem Text="Motivation" Value="Motivation" />
+                                        <asp:ListItem Text="Self-help" Value="Self-help" />
+                                        <asp:ListItem Text="Wellness" Value="Wellness" />
+                                        <asp:ListItem Text="Crime" Value="Crime" />
+                                        <asp:ListItem Text="Fantasy" Value="Fantasy" />
+                                        <asp:ListItem Text="Thriller" Value="Thriller" />
+                                        <asp:ListItem Text="Suspense" Value="Suspense" />
+                                        <asp:ListItem Text="Autobiography" Value="Autobiography" />
+                                        <asp:ListItem Text="Personal Dev" Value="Personal Dev" />
+                                        <asp:ListItem Text="Motivation" Value="Motivation" />
+
+                                    </asp:ListBox>
+
                                 </div>
                                 <br />
                             </div>
+
+
                         </div>
 
+
+
+
+
+
                         <div class="row">
-                            <div class="col-6">
-                                <div class="form-group center">
-                                    <asp:TextBox class="form-control" ID="addressTxtBx1" placeholder="Address 1" runat="server" ReadOnly="True" TextMode="MultiLine" Rows="1"></asp:TextBox>
-
-                                </div>
-                                <br />
-                            </div>
-
-                            <div class="col-6">
+                            <div class="col">
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="addressTxtBx2" placeholder="Address 2" runat="server" ReadOnly="True" TextMode="MultiLine" Rows="1"></asp:TextBox>
@@ -132,31 +138,6 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group center">
-                                    <asp:TextBox class="form-control" ID="cityTxtBx" placeholder="State" runat="server" ReadOnly="True"></asp:TextBox>
-
-                                </div>
-                                <br />
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group center">
-                                    <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="stateTxtBx" placeholder="State" runat="server" ReadOnly="True"></asp:TextBox>
-                                    </div>
-                                </div>
-                                <br />
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group center">
-                                    <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="zipCodeTxtBx" placeholder="Zip Code" runat="server" ReadOnly="True"></asp:TextBox>
-                                    </div>
-                                </div>
-                                <br />
-                            </div>
-                        </div>
 
                         <div class="row">
                             <div class="col center mx-auto">
