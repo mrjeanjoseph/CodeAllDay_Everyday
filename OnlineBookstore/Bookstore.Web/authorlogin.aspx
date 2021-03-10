@@ -1,26 +1,24 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="userprofile.aspx.cs" Inherits="Bookstore.Web.userprofile" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="authorlogin.aspx.cs" Inherits="Bookstore.Web.authorlogin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 
-
-    <div class="container-fluid" style="background-color: lightgreen"> 
+        <div class="container"> 
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col center">
-                                <img width="75" src="img/userIcon.png" />
-                            </div>
-                        </div>
 
                         <div class="row">
                             <div class="col center">
                                 <h3>Your Profile</h3>
                                 <span>Account Status</span>
-                                <asp:Label class="badge rounded-pill bg-info text-dark" ID="Label1" runat="server" Text="Your Status"></asp:Label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col center">
+                                <img width="75" src="img/userIcon.png" />
                             </div>
                         </div>
 
@@ -164,7 +162,7 @@
                 <br />
             </div>
 
-            <div class="col-md-7">
+            <div class="col-md-6">
 
                 <div class="card">
                     <div class="card-body">
