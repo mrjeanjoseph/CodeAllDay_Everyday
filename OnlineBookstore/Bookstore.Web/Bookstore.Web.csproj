@@ -69,7 +69,7 @@
   <ItemGroup>
     <Content Include="adminlogin.aspx" />
     <Content Include="adminprofile.aspx" />
-    <Content Include="authorlogin.aspx" />
+    <Content Include="authorprofile.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery-3.5.1.slim.min.js" />
@@ -1746,7 +1746,7 @@
     <Content Include="img\publisherIcon.png" />
     <Content Include="img\userIcon.png" />
     <Content Include="issuedbooks.aspx" />
-    <Content Include="publisherlogin.aspx" />
+    <Content Include="publisherprofile.aspx" />
     <Content Include="userlogin.aspx" />
     <Content Include="userprofile.aspx" />
     <Content Include="usersignup.aspx" />
@@ -1768,12 +1768,12 @@
     <Compile Include="adminprofile.aspx.designer.cs">
       <DependentUpon>adminprofile.aspx</DependentUpon>
     </Compile>
-    <Compile Include="authorlogin.aspx.cs">
-      <DependentUpon>authorlogin.aspx</DependentUpon>
+    <Compile Include="authorprofile.aspx.cs">
+      <DependentUpon>authorprofile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="authorlogin.aspx.designer.cs">
-      <DependentUpon>authorlogin.aspx</DependentUpon>
+    <Compile Include="authorprofile.aspx.designer.cs">
+      <DependentUpon>authorprofile.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
@@ -1790,12 +1790,12 @@
       <DependentUpon>issuedbooks.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="publisherlogin.aspx.cs">
-      <DependentUpon>publisherlogin.aspx</DependentUpon>
+    <Compile Include="publisherprofile.aspx.cs">
+      <DependentUpon>publisherprofile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="publisherlogin.aspx.designer.cs">
-      <DependentUpon>publisherlogin.aspx</DependentUpon>
+    <Compile Include="publisherprofile.aspx.designer.cs">
+      <DependentUpon>publisherprofile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
