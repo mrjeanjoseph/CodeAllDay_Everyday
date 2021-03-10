@@ -1,9 +1,10 @@
-﻿<%@ Page Title="Book Status" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="issuedbooks.aspx.cs" Inherits="Bookstore.Web.issuedbooks" %>
+﻿<%@ Page Title="Admin Profile" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="adminprofile.aspx.cs" Inherits="Bookstore.Web.adminprofile" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 
-        <div class="container-fluid">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-5">
                 <div class="card">
@@ -11,13 +12,13 @@
 
                         <div class="row">
                             <div class="col center">
-                                <h3>Book Issuing</h3>
+                                <h3>Admin Profile</h3>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col center">
-                                <img width="75" src="img/book.png" />
+                                <img width="75" src="img/adminIcon2.png" />
                             </div>
                         </div>
 
@@ -75,7 +76,7 @@
                             <div class="col-md-6">
                                 <div class="form-group center">
                                     <div class="input-group">
-                                    <asp:TextBox class="form-control" ID="endDateTxtBx" placeholder="End Date" runat="server" TextMode="Date"></asp:TextBox>
+                                        <asp:TextBox class="form-control" ID="endDateTxtBx" placeholder="End Date" runat="server" TextMode="Date"></asp:TextBox>
                                     </div>
                                 </div>
                                 <br />
@@ -130,6 +131,5 @@
             <br />
         </div>
     </div>
-
 
 </asp:Content>

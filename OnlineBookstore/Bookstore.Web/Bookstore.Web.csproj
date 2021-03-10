@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="adminlogin.aspx" />
+    <Content Include="adminprofile.aspx" />
     <Content Include="authorlogin.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
@@ -1730,6 +1731,7 @@
     <Content Include="img\authorIcon.png" />
     <Content Include="img\authorListIcon.png" />
     <Content Include="img\book.png" />
+    <Content Include="img\bunchofBook.png" />
     <Content Include="img\home-bg.jpg" />
     <Content Include="img\home-bg2.jpg" />
     <Content Include="img\home-bg3.jpg" />
@@ -1757,6 +1759,13 @@
     </Compile>
     <Compile Include="adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminprofile.aspx.cs">
+      <DependentUpon>adminprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminprofile.aspx.designer.cs">
+      <DependentUpon>adminprofile.aspx</DependentUpon>
     </Compile>
     <Compile Include="authorlogin.aspx.cs">
       <DependentUpon>authorlogin.aspx</DependentUpon>
