@@ -149,7 +149,7 @@
                         <div class="row">
                             <div class="col center">
                                 <div class="form-group">
-                                    <asp:Button ID="registerBtn" class="btn btn-success w-50 btn-lg" runat="server" Text="Register" />
+                                    <asp:Button ID="registerBtn" class="btn btn-success w-50 btn-lg" runat="server" Text="Register" OnClick="RegisterBtn_Click" />
                                 </div>
                                 <br />
                             </div>

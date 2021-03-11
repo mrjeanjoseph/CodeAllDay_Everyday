@@ -43,5 +43,20 @@ namespace Bookstore.Web
         {
             Response.Redirect("MemberDetails.aspx");
         }
+
+        protected void ViewBooksLBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("BookDetails.aspx");
+        }
+
+        protected void UserLoginLBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UserLogin.aspx");
+        }
+
+        protected void UserSignUpLBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UserSignup.aspx");
+        }
     }
 }

@@ -33,40 +33,40 @@ namespace Bookstore.Web
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// viewBooksBtn control.
+        /// viewBooksLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton viewBooksBtn;
+        protected global::System.Web.UI.WebControls.LinkButton viewBooksLBtn;
 
         /// <summary>
-        /// LinkButton2 control.
+        /// userLoginLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
+        protected global::System.Web.UI.WebControls.LinkButton userLoginLBtn;
 
         /// <summary>
-        /// LinkButton3 control.
+        /// userSignUpLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
+        protected global::System.Web.UI.WebControls.LinkButton userSignUpLBtn;
 
         /// <summary>
-        /// LinkButton4 control.
+        /// logoutLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton4;
+        protected global::System.Web.UI.WebControls.LinkButton logoutLBtn;
 
         /// <summary>
         /// LinkButton5 control.
