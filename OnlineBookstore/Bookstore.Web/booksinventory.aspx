@@ -179,10 +179,6 @@
                             </div>
                         </div>
 
-
-
-
-
                         <div class="row">
                             <div class="col">
                                 <label>Book Description</label>
@@ -195,10 +191,15 @@
                             </div>
                         </div>
 
-
                         <div class="row">
-                            <div class="col center mx-auto">
-                                <asp:Button ID="deletePBtn" class="btn btn-danger w-50" runat="server" Text="Delete User Permanantly" />
+                            <div class="col-4">
+                                <asp:Button ID="savePBtn" class="btn btn-success w-100" runat="server" Text="Add" />
+                            </div>
+                            <div class="col-4">
+                                <asp:Button ID="updatePBtn" class="btn btn-warning w-100" runat="server" Text="Update" />
+                            </div>
+                            <div class="col-4">
+                                <asp:Button ID="deletePBtn" class="btn btn-danger w-100" runat="server" Text="Delete" />
                             </div>
                         </div>
                     </div>
@@ -206,19 +207,20 @@
                 </div>
                 <br />
             </div>
+
             <div class="col-md-7">
 
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
                             <div class="col center">
-                                <img width="100" src="img/bunchofBook.png" />
+                                <img width="100" src="img/bunchofBook4.png" />
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col center">
-                                <h3>Issued Book List</h3>
+                                <h3>Inventory</h3>
                             </div>
                         </div>
 

@@ -1734,6 +1734,8 @@
     <Content Include="img\authorListIcon.png" />
     <Content Include="img\book.png" />
     <Content Include="img\bunchofBook.png" />
+    <Content Include="img\bunchofBook2.png" />
+    <Content Include="img\bunchofBook4.png" />
     <Content Include="img\home-bg.jpg" />
     <Content Include="img\home-bg2.jpg" />
     <Content Include="img\home-bg3.jpg" />

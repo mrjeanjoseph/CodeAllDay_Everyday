@@ -159,6 +159,24 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.TextBox addressTxtBx2;
 
         /// <summary>
+        /// savePBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button savePBtn;
+
+        /// <summary>
+        /// updatePBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button updatePBtn;
+
+        /// <summary>
         /// deletePBtn control.
         /// </summary>
         /// <remarks>
