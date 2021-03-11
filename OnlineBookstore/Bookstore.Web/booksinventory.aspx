@@ -55,7 +55,6 @@
                             </div>
                         </div>
 
-
                         <div class="row">
                             <div class="col-md-4">
                                 <label>Language</label>
@@ -118,10 +117,67 @@
                                 </div>
                                 <br />
                             </div>
-
-
                         </div>
 
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>Edition</label>
+                                <div class="form-group center">
+                                    <div class="input-group">
+                                        <asp:TextBox class="form-control" ID="editionTxtBx" placeholder="Edition" runat="server" ReadOnly="True"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+                            <div class="col-md-4">
+                                <label>Price</label>
+                                <div class="form-group center">
+                                    <div class="input-group">
+                                        <asp:TextBox class="form-control" ID="costTxtBx" placeholder="Cost" runat="server" SelectionMode="Single" TextMode="Number" ReadOnly="True"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+                            <div class="col-md-4">
+                                <label>Pages</label>
+                                <div class="form-group center">
+                                    <div class="input-group">
+                                        <asp:TextBox class="form-control" ID="pageQty" placeholder="Pages" runat="server" ReadOnly="True"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>Edition</label>
+                                <div class="form-group center">
+                                    <div class="input-group">
+                                        <asp:TextBox class="form-control" ID="TextBox1" placeholder="Edition" runat="server"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+                            <div class="col-md-4">
+                                <label>Price</label>
+                                <div class="form-group center">
+                                    <div class="input-group">
+                                        <asp:TextBox class="form-control" ID="TextBox2" placeholder="Cost" runat="server"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+                            <div class="col-md-4">
+                                <label>Pages</label>
+                                <div class="form-group center">
+                                    <div class="input-group">
+                                        <asp:TextBox class="form-control" ID="TextBox3" placeholder="Pages" runat="server"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+                        </div>
 
 
 
