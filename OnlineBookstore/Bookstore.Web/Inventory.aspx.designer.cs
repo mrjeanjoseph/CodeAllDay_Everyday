@@ -114,13 +114,13 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.TextBox priceTxtBx;
 
         /// <summary>
-        /// pageQty control.
+        /// numOfPages control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox pageQty;
+        protected global::System.Web.UI.WebControls.TextBox numOfPages;
 
         /// <summary>
         /// QtyTxtBx control.

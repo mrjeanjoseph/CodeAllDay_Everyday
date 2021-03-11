@@ -144,7 +144,7 @@
                                 <label>No. of Pages</label>
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="pageQty" placeholder="0" runat="server" ReadOnly="True" TextMode="Number"></asp:TextBox>
+                                        <asp:TextBox class="form-control" ID="numOfPages" placeholder="0" runat="server" ReadOnly="True" TextMode="Number"></asp:TextBox>
                                     </div>
                                 </div>
                                 <br />
