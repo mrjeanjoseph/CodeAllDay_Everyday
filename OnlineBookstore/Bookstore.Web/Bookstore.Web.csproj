@@ -68,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminLogin.aspx" />
-    <Content Include="AdminMemberProfile.aspx" />
+    <Content Include="MemberDetails.aspx" />
     <Content Include="AuthorProfile.aspx" />
     <Content Include="Inventory.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
@@ -1748,7 +1748,7 @@
     <Content Include="img\img6.png" />
     <Content Include="img\publisherIcon.png" />
     <Content Include="img\userIcon.png" />
-    <Content Include="BookStatus.aspx" />
+    <Content Include="BookDetails.aspx" />
     <Content Include="PublisherProfile.aspx" />
     <Content Include="UserLogin.aspx" />
     <Content Include="UserProfile.aspx" />
@@ -1764,12 +1764,12 @@
     <Compile Include="AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminMemberProfile.aspx.cs">
-      <DependentUpon>AdminMemberProfile.aspx</DependentUpon>
+    <Compile Include="MemberDetails.aspx.cs">
+      <DependentUpon>MemberDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminMemberProfile.aspx.designer.cs">
-      <DependentUpon>AdminMemberProfile.aspx</DependentUpon>
+    <Compile Include="MemberDetails.aspx.designer.cs">
+      <DependentUpon>MemberDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="AuthorProfile.aspx.cs">
       <DependentUpon>AuthorProfile.aspx</DependentUpon>
@@ -1792,12 +1792,12 @@
     <Compile Include="Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BookStatus.aspx.cs">
-      <DependentUpon>BookStatus.aspx</DependentUpon>
+    <Compile Include="BookDetails.aspx.cs">
+      <DependentUpon>BookDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BookStatus.aspx.designer.cs">
-      <DependentUpon>BookStatus.aspx</DependentUpon>
+    <Compile Include="BookDetails.aspx.designer.cs">
+      <DependentUpon>BookDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublisherProfile.aspx.cs">
