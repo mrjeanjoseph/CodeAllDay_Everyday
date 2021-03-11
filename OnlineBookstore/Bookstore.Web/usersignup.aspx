@@ -81,7 +81,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group center">
-                                    <asp:DropDownList class="form-control" ID="DropDownList1" runat="server">
+                                    <asp:DropDownList class="form-control" ID="stateDDL" runat="server">
                                         <asp:ListItem Text="--Select--" Value="select" />
                                         <asp:ListItem Text="Haiti" Value="LAS" />
                                         <asp:ListItem Text="North Carolina" Value="NC" />
@@ -125,7 +125,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group center">
-                                    <asp:TextBox class="form-control" ID="userNameTxtBx" placeholder="Username"
+                                    <asp:TextBox class="form-control" ID="usernameTxtBx" placeholder="Username"
                                         runat="server"></asp:TextBox>
                                 </div>
                                 <br />
