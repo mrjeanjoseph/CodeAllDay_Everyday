@@ -87,12 +87,12 @@
                 <div class="row">
                     <div class="col-xs-12 col-ms-12 col-md-12 text-center">
                         <p>
-                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton11" runat="server">Admin Login</asp:LinkButton>
-                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton12" runat="server">Author Mgmt</asp:LinkButton>
-                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton13" runat="server">Publisher Mgmt</asp:LinkButton>
-                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton14" runat="server">Book Inventory</asp:LinkButton>
-                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton15" runat="server">Book Issuing</asp:LinkButton>
-                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton16" runat="server">Member Mgmt</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="adminLoginLBtn" runat="server" OnClick="AdminLoginLBtn_Click">Admin Login</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="authorProfileBtn" runat="server" OnClick="AuthorProfileBtn_Click">Author Mgmt</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="publisherProfileBtn" runat="server" OnClick="PublisherProfileBtn_Click">Publisher Mgmt</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="inventoryDetailBtn" runat="server" OnClick="InventoryDetailBtn_Click">Book Inventory</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="bookDetailBtn" runat="server" OnClick="BookDetailBtn_Click">Book Issuing</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="memberDetailBtn" runat="server" OnClick="MemberDetailBtn_Click">Member Mgmt</asp:LinkButton>
                         </p>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
             <div id="footer2" class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-ms-12 col-md-12 text-center">
-                        <p>&copy All right reserved. <a class="footerlinks" href="#" target="_blank">DVC Enterprises LLC</a></p>
+                        <p>&copy All right reserved. <a class="footerlinks" href="Homepage.aspx" target="_blank">DVC Enterprises LLC</a></p>
                     </div>
                 </div>
             </div>

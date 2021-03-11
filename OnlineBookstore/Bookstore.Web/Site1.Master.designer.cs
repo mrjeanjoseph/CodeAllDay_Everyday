@@ -33,13 +33,13 @@ namespace Bookstore.Web
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// LinkButton1 control.
+        /// viewBooksBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.LinkButton viewBooksBtn;
 
         /// <summary>
         /// LinkButton2 control.
@@ -87,57 +87,57 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.ContentPlaceHolder body;
 
         /// <summary>
-        /// LinkButton11 control.
+        /// adminLoginLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton11;
+        protected global::System.Web.UI.WebControls.LinkButton adminLoginLBtn;
 
         /// <summary>
-        /// LinkButton12 control.
+        /// authorProfileBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton12;
+        protected global::System.Web.UI.WebControls.LinkButton authorProfileBtn;
 
         /// <summary>
-        /// LinkButton13 control.
+        /// publisherProfileBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton13;
+        protected global::System.Web.UI.WebControls.LinkButton publisherProfileBtn;
 
         /// <summary>
-        /// LinkButton14 control.
+        /// inventoryDetailBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton14;
+        protected global::System.Web.UI.WebControls.LinkButton inventoryDetailBtn;
 
         /// <summary>
-        /// LinkButton15 control.
+        /// bookDetailBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton15;
+        protected global::System.Web.UI.WebControls.LinkButton bookDetailBtn;
 
         /// <summary>
-        /// LinkButton16 control.
+        /// memberDetailBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton16;
+        protected global::System.Web.UI.WebControls.LinkButton memberDetailBtn;
     }
 }

@@ -70,7 +70,7 @@
     <Content Include="AdminLogin.aspx" />
     <Content Include="MemberDetails.aspx" />
     <Content Include="AuthorProfile.aspx" />
-    <Content Include="Inventory.aspx" />
+    <Content Include="InventoryDetails.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery-3.5.1.slim.min.js" />
@@ -1778,12 +1778,12 @@
     <Compile Include="AuthorProfile.aspx.designer.cs">
       <DependentUpon>AuthorProfile.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Inventory.aspx.cs">
-      <DependentUpon>Inventory.aspx</DependentUpon>
+    <Compile Include="InventoryDetails.aspx.cs">
+      <DependentUpon>InventoryDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Inventory.aspx.designer.cs">
-      <DependentUpon>Inventory.aspx</DependentUpon>
+    <Compile Include="InventoryDetails.aspx.designer.cs">
+      <DependentUpon>InventoryDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>

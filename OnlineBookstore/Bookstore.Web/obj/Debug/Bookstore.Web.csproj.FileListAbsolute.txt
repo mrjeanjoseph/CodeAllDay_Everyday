@@ -52,7 +52,6 @@ C:\Users\Computer\source\repos\1 - GITHUB PROJECTS\1 - CodingAllDayEveryday\Onli
 C:\Users\Computer\source\repos\1 - GITHUB PROJECTS\1 - CodingAllDayEveryday\OnlineBookstore\Bookstore.Web\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Computer\source\repos\1 - GITHUB PROJECTS\1 - CodingAllDayEveryday\OnlineBookstore\Bookstore.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Computer\source\repos\1 - GITHUB PROJECTS\1 - CodingAllDayEveryday\OnlineBookstore\Bookstore.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Computer\source\repos\1 - GITHUB PROJECTS\1 - CodingAllDayEveryday\OnlineBookstore\Bookstore.Web\obj\Debug\Bookstore.Web.csprojAssemblyReference.cache
 C:\Users\Computer\source\repos\1 - GITHUB PROJECTS\1 - CodingAllDayEveryday\OnlineBookstore\Bookstore.Web\obj\Debug\Bookstore.Web.csproj.CoreCompileInputs.cache
 C:\Users\Computer\source\repos\1 - GITHUB PROJECTS\1 - CodingAllDayEveryday\OnlineBookstore\Bookstore.Web\obj\Debug\Bookstore.Web.csproj.CopyComplete
 C:\Users\Computer\source\repos\1 - GITHUB PROJECTS\1 - CodingAllDayEveryday\OnlineBookstore\Bookstore.Web\obj\Debug\Bookstore.Web.dll
