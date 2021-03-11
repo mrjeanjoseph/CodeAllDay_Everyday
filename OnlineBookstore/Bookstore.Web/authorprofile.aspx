@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Author Details" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="authorprofile.aspx.cs" Inherits="Bookstore.Web.authorlogin" %>
+﻿<%@ Page Title="Author Details" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="AuthorProfile.aspx.cs" Inherits="Bookstore.Web.authorlogin" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

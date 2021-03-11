@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Book Details" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="booksinventory.aspx.cs" Inherits="Bookstore.Web.booksinventory" %>
+﻿<%@ Page Title="Book Details" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Inventory.aspx.cs" Inherits="Bookstore.Web.booksinventory" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -38,6 +38,7 @@
 
                         <div class="row">
                             <div class="col-md-3">
+                                <label>Book Id</label>
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="BookIdTxtBx" placeholder="Book Id" runat="server"></asp:TextBox><asp:LinkButton ID="searchLBtn" CssClass="btn btn-primary" runat="server"><i class="fas fa-search"></i></asp:LinkButton>
@@ -46,6 +47,7 @@
                                 <br />
                             </div>
                             <div class="col-md-9">
+                                <label>Book Name</label>
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="bookNameTxtBx" placeholder="Book Name" runat="server"></asp:TextBox>
@@ -80,7 +82,7 @@
                             </div>
 
                             <div class="col-md-4">
-                                <label>Authorname</label>
+                                <label>Author Name</label>
                                 <div class="form-group center">
                                     <asp:DropDownList class="form-control" ID="authorNameDDL" runat="server">
                                         <asp:ListItem Text="Author1" Value="Author1" />
@@ -139,7 +141,7 @@
                                 <br />
                             </div>
                             <div class="col-md-4">
-                                <label>Pages</label>
+                                <label>No. of Pages</label>
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="pageQty" placeholder="0" runat="server" ReadOnly="True" TextMode="Number"></asp:TextBox>
@@ -151,7 +153,7 @@
 
                         <div class="row">
                             <div class="col-md-4">
-                                <label>Quantity</label>
+                                <label>Total Quantity</label>
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="QtyTxtBx" placeholder="0" runat="server" TextMode="Number" ReadOnly="True"></asp:TextBox>
@@ -214,7 +216,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col center">
-                                <img width="100" src="img/bunchofBook4.png" />
+                                <img width="100" src="img/bunchofBook2.png" />
                             </div>
                         </div>
 
