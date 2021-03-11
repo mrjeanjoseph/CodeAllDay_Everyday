@@ -130,10 +130,10 @@
                                 <br />
                             </div>
                             <div class="col-md-4">
-                                <label>Price</label>
+                                <label>Unit Price</label>
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="costTxtBx" placeholder="Cost" runat="server" SelectionMode="Single" TextMode="Number" ReadOnly="True"></asp:TextBox>
+                                        <asp:TextBox class="form-control" ID="priceTxtBx" placeholder="0" runat="server" SelectionMode="Single" TextMode="Number" ReadOnly="True"></asp:TextBox>
                                     </div>
                                 </div>
                                 <br />
@@ -142,7 +142,7 @@
                                 <label>Pages</label>
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="pageQty" placeholder="Pages" runat="server" ReadOnly="True"></asp:TextBox>
+                                        <asp:TextBox class="form-control" ID="pageQty" placeholder="0" runat="server" ReadOnly="True" TextMode="Number"></asp:TextBox>
                                     </div>
                                 </div>
                                 <br />
@@ -151,28 +151,28 @@
 
                         <div class="row">
                             <div class="col-md-4">
-                                <label>Edition</label>
+                                <label>Quantity</label>
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="TextBox1" placeholder="Edition" runat="server"></asp:TextBox>
+                                        <asp:TextBox class="form-control" ID="QtyTxtBx" placeholder="0" runat="server" TextMode="Number" ReadOnly="True"></asp:TextBox>
                                     </div>
                                 </div>
                                 <br />
                             </div>
                             <div class="col-md-4">
-                                <label>Price</label>
+                                <label>Qty Available</label>
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="TextBox2" placeholder="Cost" runat="server"></asp:TextBox>
+                                        <asp:TextBox class="form-control" ID="availableTxtBx" placeholder="0" runat="server" TextMode="Number" ReadOnly="True"></asp:TextBox>
                                     </div>
                                 </div>
                                 <br />
                             </div>
                             <div class="col-md-4">
-                                <label>Pages</label>
+                                <label>Qty Checked Out</label>
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="TextBox3" placeholder="Pages" runat="server"></asp:TextBox>
+                                        <asp:TextBox class="form-control" ID="checkedOutTxtBx" placeholder="0" runat="server" TextMode="Number" ReadOnly="True"></asp:TextBox>
                                     </div>
                                 </div>
                                 <br />
@@ -185,9 +185,10 @@
 
                         <div class="row">
                             <div class="col">
+                                <label>Book Description</label>
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="addressTxtBx2" placeholder="Address 2" runat="server" ReadOnly="True" TextMode="MultiLine" Rows="1"></asp:TextBox>
+                                        <asp:TextBox class="form-control" ID="addressTxtBx2" placeholder="Description here!" runat="server" ReadOnly="True" TextMode="MultiLine" Rows="3"></asp:TextBox>
                                     </div>
                                 </div>
                                 <br />

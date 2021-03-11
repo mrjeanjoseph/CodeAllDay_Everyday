@@ -105,13 +105,13 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.TextBox editionTxtBx;
 
         /// <summary>
-        /// costTxtBx control.
+        /// priceTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox costTxtBx;
+        protected global::System.Web.UI.WebControls.TextBox priceTxtBx;
 
         /// <summary>
         /// pageQty control.
@@ -123,31 +123,31 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.TextBox pageQty;
 
         /// <summary>
-        /// TextBox1 control.
+        /// QtyTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox QtyTxtBx;
 
         /// <summary>
-        /// TextBox2 control.
+        /// availableTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox availableTxtBx;
 
         /// <summary>
-        /// TextBox3 control.
+        /// checkedOutTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox checkedOutTxtBx;
 
         /// <summary>
         /// addressTxtBx2 control.
