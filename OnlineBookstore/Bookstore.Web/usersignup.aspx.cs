@@ -10,7 +10,7 @@ using System.Data;
 
 namespace Bookstore.Web
 {
-    public partial class usersignup : System.Web.UI.Page
+    public partial class usersignup : Page
     {
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
 
@@ -22,7 +22,15 @@ namespace Bookstore.Web
         protected void RegisterBtn_Click(object sender, EventArgs e)
         {
             //Response.Write("<script>alert('Testing 123');</script>"); // testing script
+            SignUpNewUser();
 
+        }
+
+        //user Define method
+        //
+
+        void SignUpNewUser()
+        {
             try
             {
                 SqlConnection con = new SqlConnection(strcon);
@@ -31,11 +39,7 @@ namespace Bookstore.Web
                     con.Open();
                 }
 
-                SqlCommand cmd = new SqlCommand("INSERT INTO MemberDetails " +
-                    "(Username, FullName, BirthDate, ContactNumber, Email, StreetAddress1, " +
-                    "StreetAddress2, City, State, ZipCode, AccountStatus, Password, ConfirmPass)" +
-                    "value (@Username, @FullName, @BirthDate, @ContactNumber, @Email, @StreetAddress1, " +
-                    "@StreetAddress2, @City, @State, @ZipCode, @AccountStatus, @Password, @ConfirmPass)", con);
+                SqlCommand cmd = new SqlCommand("INSERT INTO MemberDetails (Username, FullName, BirthDate, ContactNumber, Email, StreetAddress1, StreetAddress2, City, State, ZipCode, AccountStatus, Password, ConfirmPass) values (@Username, @FullName, @BirthDate, @ContactNumber, @Email, @StreetAddress1, @StreetAddress2, @City, @State, @ZipCode, @AccountStatus, @Password, @ConfirmPass)", con);
 
                 cmd.Parameters.AddWithValue("@Username", usernameTxtBx.Text.Trim());
                 cmd.Parameters.AddWithValue("@FullName", fullNameTxtBx.Text.Trim());
@@ -54,7 +58,7 @@ namespace Bookstore.Web
 
                 cmd.ExecuteNonQuery();
                 con.Close();
-                Response.Write("<script>alert('Sign up successfull. Go to login page');</script>");
+                Response.Write("<script>alert('Sign up successfull. Go to user Login page');</script>");
             }
             catch (Exception ex)
             {
