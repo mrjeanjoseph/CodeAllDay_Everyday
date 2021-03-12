@@ -23,13 +23,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group center">
-                                    <asp:TextBox CssClass="form-control" ID="adminId" placeholder="Admin ID"
+                                    <asp:TextBox CssClass="form-control" ID="adminIdTxtBx" placeholder="Admin ID"
                                         runat="server"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group center">
-                                    <asp:TextBox CssClass="form-control" ID="adminPass" placeholder="Password"
+                                    <asp:TextBox CssClass="form-control" ID="passwordTxtBx" placeholder="Password"
                                         runat="server" TextMode="Password"></asp:TextBox>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@
                     <div class="row">
                         <div class="col center">
                             <div class="form-group">
-                                <asp:Button ID="loginBtn1" class="btn btn-success w-50 btn-lg" runat="server" Text="Login" />
+                                <asp:Button ID="adminLoginBtn" class="btn btn-success w-50 btn-lg" runat="server" Text="Login" OnClick="AdminLoginBtn_Click" />
                             </div>
                             <br />
                         </div>

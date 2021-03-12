@@ -33,12 +33,12 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-group center">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox1" placeholder="Member ID"
+                                    <asp:TextBox CssClass="form-control" ID="userNameTxtBx" placeholder="Username"
                                         runat="server"></asp:TextBox>
                                 </div>
                                 <br />
                                 <div class="form-group center">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox2" placeholder="Password"
+                                    <asp:TextBox CssClass="form-control" ID="passwordTxtBx" placeholder="Password"
                                         runat="server" TextMode="Password"></asp:TextBox>
                                 </div>
                                 <br />

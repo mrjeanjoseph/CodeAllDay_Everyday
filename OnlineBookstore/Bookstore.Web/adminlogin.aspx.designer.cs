@@ -15,30 +15,30 @@ namespace Bookstore.Web
     {
 
         /// <summary>
-        /// adminId control.
+        /// adminIdTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox adminId;
+        protected global::System.Web.UI.WebControls.TextBox adminIdTxtBx;
 
         /// <summary>
-        /// adminPass control.
+        /// passwordTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox adminPass;
+        protected global::System.Web.UI.WebControls.TextBox passwordTxtBx;
 
         /// <summary>
-        /// loginBtn1 control.
+        /// adminLoginBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button loginBtn1;
+        protected global::System.Web.UI.WebControls.Button adminLoginBtn;
     }
 }

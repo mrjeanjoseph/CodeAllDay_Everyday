@@ -15,22 +15,22 @@ namespace Bookstore.Web
     {
 
         /// <summary>
-        /// TextBox1 control.
+        /// userNameTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox userNameTxtBx;
 
         /// <summary>
-        /// TextBox2 control.
+        /// passwordTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox passwordTxtBx;
 
         /// <summary>
         /// userLoginBtn control.
