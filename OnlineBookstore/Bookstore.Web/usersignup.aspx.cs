@@ -21,14 +21,43 @@ namespace Bookstore.Web
 
         protected void RegisterBtn_Click(object sender, EventArgs e)
         {
-            //Response.Write("<script>alert('Testing 123');</script>"); // testing script
-            SignUpNewUser();
+            if (checkMemberExists())
+            {
+                Response.Write("<script>alert('Username taken. Please try a different username');</script>");
+            }
+            else
+            {
+                SignUpNewUser();
+            }
+
 
         }
 
-        //user Define method
-        //
+        bool checkMemberExists()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
 
+                SqlCommand cmd = new SqlCommand("SELECT * from MemberDetails where Username = '"+usernameTxtBx.Text.Trim()+"';", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                con.Close();
+                Response.Write("<script>alert('Sign up successfull. Go to user Login page');</script>");
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return false;
+        }
+
+        //user Define method
         void SignUpNewUser()
         {
             try
