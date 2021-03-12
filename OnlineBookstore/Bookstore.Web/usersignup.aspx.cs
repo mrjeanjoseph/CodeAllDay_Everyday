@@ -28,9 +28,7 @@ namespace Bookstore.Web
             else
             {
                 SignUpNewUser();
-            }
-
-
+            } 
         }
 
         bool checkMemberExists()
@@ -43,8 +41,20 @@ namespace Bookstore.Web
                     con.Open();
                 }
 
-                SqlCommand cmd = new SqlCommand("SELECT * from MemberDetails where Username = '"+usernameTxtBx.Text.Trim()+"';", con);
+                SqlCommand cmd = new SqlCommand("SELECT * from MemberDetails where Username = '" + usernameTxtBx.Text.Trim() + "';", con);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count >= 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
 
                 con.Close();
                 Response.Write("<script>alert('Sign up successfull. Go to user Login page');</script>");
@@ -52,9 +62,8 @@ namespace Bookstore.Web
             }
             catch (Exception)
             {
-                throw;
+                return false;
             }
-            return false;
         }
 
         //user Define method
