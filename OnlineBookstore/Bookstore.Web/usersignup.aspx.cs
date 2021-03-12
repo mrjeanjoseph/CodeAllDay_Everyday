@@ -10,9 +10,9 @@ using System.Data;
 
 namespace Bookstore.Web
 {
-    public partial class usersignup : Page
+    public partial class Usersignup : Page
     {
-        string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
+        readonly string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -21,7 +21,7 @@ namespace Bookstore.Web
 
         protected void RegisterBtn_Click(object sender, EventArgs e)
         {
-            if (checkMemberExists())
+            if (CheckMemberExists())
             {
                 Response.Write("<script>alert('Username taken. Please try a different username');</script>");
             }
@@ -31,7 +31,7 @@ namespace Bookstore.Web
             } 
         }
 
-        bool checkMemberExists()
+        bool CheckMemberExists()
         {
             try
             {
