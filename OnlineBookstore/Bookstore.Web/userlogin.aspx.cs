@@ -35,7 +35,7 @@ namespace Bookstore.Web
                 {
                     while (readDB.Read())
                     {
-                        Response.Write("<script>alert('Hello " + readDB.GetValue(1).ToString() + ", Welcome!');</script>");
+                        //Response.Write("<script>alert('Hello " + readDB.GetValue(1).ToString() + ", Welcome!');</script>");
                         Session["Username"] = readDB.GetValue(0).ToString();
                         Session["FullName"] = readDB.GetValue(1).ToString();
                         Session["AccountStatus"] = readDB.GetValue(1).ToString();

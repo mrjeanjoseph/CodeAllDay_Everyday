@@ -91,7 +91,7 @@ namespace Bookstore.Web
 
         protected void UserProfileLBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("UserLogin.aspx");
+            Response.Redirect("AdminUserDetails.aspx");
         }
 
         protected void ViewBooksLBtn_Click(object sender, EventArgs e)
