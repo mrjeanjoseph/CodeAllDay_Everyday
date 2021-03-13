@@ -11,28 +11,29 @@ namespace Bookstore.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
-            {
-                if (Session["role"].Equals(""))
-                {
-                    userSignUpLBtn.Visible = true;
-                    userLoginLBtn.Visible = true;
-                    logoutLBtn.Visible = true;
-                    helloUserLBtn.Visible = true;
+            //try
+            //{
+            //    if (Session["role"].Equals(""))
+            //    {
+            //        userSignUpLBtn.Visible = true;
+            //        userLoginLBtn.Visible = true;
+            //        logoutLBtn.Visible = true;
+            //        helloUserLBtn.Visible = true;
 
-                    adminLoginLBtn.Visible = true;
-                    authorProfileLBtn.Visible = true;
-                    publisherProfileLBtn.Visible = true;
-                    inventoryDetailLBtn.Visible = true;
-                    userLoginLBtn.Visible = true;
+            //        adminLoginLBtn.Visible = true;
+            //        authorDetailsLBtn.Visible = true;
+            //        publisherDetailsLBtn.Visible = true;
+            //        inventoryDetailLBtn.Visible = true;
+            //        inventoryDetailLBtn.Visible = true;
+            //        userLoginLBtn.Visible = true;
 
 
-                }
-            }
-            catch (Exception ex)
-            {
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
 
-            }
+            //}
         }
 
         protected void AdminLoginLBtn_Click(object sender, EventArgs e)
@@ -40,34 +41,34 @@ namespace Bookstore.Web
             Response.Redirect("AdminLogin.aspx");
         }
 
-        protected void AuthorProfileBtn_Click(object sender, EventArgs e)
+        protected void AuthorDetailsLBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AuthorProfile.aspx");
+            Response.Redirect("AdminAuthorDetails.aspx");
         }
 
-        protected void PublisherProfileBtn_Click(object sender, EventArgs e)
+        protected void PublisherDetailsLBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("PublisherProfile.aspx");
+            Response.Redirect("AdminPublisherDetails.aspx");
         }
 
-        protected void InventoryDetailBtn_Click(object sender, EventArgs e)
+        protected void InventoryDetailLBtn_Click(object sender, EventArgs e)
         {
             Response.Redirect("InventoryDetails.aspx");
         }
 
-        protected void BookDetailBtn_Click(object sender, EventArgs e)
+        protected void BookDetailLBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("BookDetails.aspx");
+            Response.Redirect("AdminBookDetails.aspx");
         }
 
-        protected void MemberDetailBtn_Click(object sender, EventArgs e)
+        protected void UserProfileLBtn_Click(object sender, EventArgs e)
         {
             Response.Redirect("UserLogin.aspx");
         }
 
         protected void ViewBooksLBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("BookDetails.aspx");
+            Response.Redirect("AdminBookDetails.aspx");
         }
 
         protected void UserLoginLBtn_Click(object sender, EventArgs e)

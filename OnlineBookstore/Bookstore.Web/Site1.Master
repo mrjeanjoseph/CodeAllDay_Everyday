@@ -88,11 +88,11 @@
                     <div class="col-xs-12 col-ms-12 col-md-12 text-center">
                         <p>
                             <asp:LinkButton CssClass="footerlinks" ID="adminLoginLBtn" runat="server" OnClick="AdminLoginLBtn_Click">Admin Login</asp:LinkButton>
-                            <asp:LinkButton CssClass="footerlinks" ID="authorProfileLBtn" runat="server" OnClick="AuthorProfileBtn_Click" Visible="False">Author Detail</asp:LinkButton>
-                            <asp:LinkButton CssClass="footerlinks" ID="publisherProfileLBtn" runat="server" OnClick="PublisherProfileBtn_Click" Visible="False">Publisher Detail</asp:LinkButton>
-                            <asp:LinkButton CssClass="footerlinks" ID="inventoryDetailLBtn" runat="server" OnClick="InventoryDetailBtn_Click" Visible="False">Book Inventory</asp:LinkButton>
-                            <asp:LinkButton CssClass="footerlinks" ID="bookDetailLBtn" runat="server" OnClick="BookDetailBtn_Click" Visible="False">Book Issuing</asp:LinkButton>
-                            <asp:LinkButton CssClass="footerlinks" ID="userProfileLBtn" runat="server" OnClick="UserProfileBtn_Click" Visible="False">User Profile</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="userProfileLBtn" runat="server" OnClick="UserProfileLBtn_Click" Visible="False">User Profile</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="authorDetailsLBtn" runat="server" OnClick="AuthorDetailsLBtn_Click" Visible="False">Author Detail</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="publisherDetailsLBtn" runat="server" OnClick="PublisherDetailsLBtn_Click" Visible="False">Publisher Detail</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="inventoryDetailLBtn" runat="server" OnClick="InventoryDetailLBtn_Click" Visible="False">Inventory</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="bookDetailLBtn" runat="server" OnClick="BookDetailLBtn_Click" Visible="False">Book Issuing</asp:LinkButton>
                         </p>
                     </div>
                 </div>

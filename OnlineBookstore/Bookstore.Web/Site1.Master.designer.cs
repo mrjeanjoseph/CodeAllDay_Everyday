@@ -96,22 +96,31 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.LinkButton adminLoginLBtn;
 
         /// <summary>
-        /// authorProfileLBtn control.
+        /// userProfileLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton authorProfileLBtn;
+        protected global::System.Web.UI.WebControls.LinkButton userProfileLBtn;
 
         /// <summary>
-        /// publisherProfileLBtn control.
+        /// authorDetailsLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton publisherProfileLBtn;
+        protected global::System.Web.UI.WebControls.LinkButton authorDetailsLBtn;
+
+        /// <summary>
+        /// publisherDetailsLBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton publisherDetailsLBtn;
 
         /// <summary>
         /// inventoryDetailLBtn control.
@@ -130,14 +139,5 @@ namespace Bookstore.Web
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton bookDetailLBtn;
-
-        /// <summary>
-        /// userProfileLBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton userProfileLBtn;
     }
 }

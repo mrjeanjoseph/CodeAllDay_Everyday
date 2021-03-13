@@ -1750,7 +1750,7 @@
     <Content Include="img\publisherIcon.png" />
     <Content Include="img\userIcon.png" />
     <Content Include="AdminBookDetails.aspx" />
-    <Content Include="AdminPublisherProfile.aspx" />
+    <Content Include="AdminPublisherDetails.aspx" />
     <Content Include="UserLogin.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="UserSignup.aspx" />
@@ -1801,12 +1801,12 @@
       <DependentUpon>AdminBookDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AdminPublisherProfile.aspx.cs">
-      <DependentUpon>AdminPublisherProfile.aspx</DependentUpon>
+    <Compile Include="AdminPublisherDetails.aspx.cs">
+      <DependentUpon>AdminPublisherDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminPublisherProfile.aspx.designer.cs">
-      <DependentUpon>AdminPublisherProfile.aspx</DependentUpon>
+    <Compile Include="AdminPublisherDetails.aspx.designer.cs">
+      <DependentUpon>AdminPublisherDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
