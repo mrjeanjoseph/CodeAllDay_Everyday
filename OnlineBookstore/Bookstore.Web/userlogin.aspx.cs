@@ -39,7 +39,7 @@ namespace Bookstore.Web
                         Session["Username"] = readDB.GetValue(0).ToString();
                         Session["FullName"] = readDB.GetValue(1).ToString();
                         Session["AccountStatus"] = readDB.GetValue(1).ToString();
-                        Session["User"] = "User";
+                        Session["Role"] = "User";
                     }
                     Response.Redirect("Homepage.aspx");
                 }

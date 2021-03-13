@@ -11,29 +11,57 @@ namespace Bookstore.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    if (Session["role"].Equals(""))
-            //    {
-            //        userSignUpLBtn.Visible = true;
-            //        userLoginLBtn.Visible = true;
-            //        logoutLBtn.Visible = true;
-            //        helloUserLBtn.Visible = true;
+            try
+            {
+                if (Session["Role"].Equals(""))
+                {
+                    userSignUpLBtn.Visible = true;
+                    userLoginLBtn.Visible = true;
+                    logoutLBtn.Visible = false;
+                    helloUserLBtn.Visible = false;
 
-            //        adminLoginLBtn.Visible = true;
-            //        authorDetailsLBtn.Visible = true;
-            //        publisherDetailsLBtn.Visible = true;
-            //        inventoryDetailLBtn.Visible = true;
-            //        inventoryDetailLBtn.Visible = true;
-            //        userLoginLBtn.Visible = true;
+                    adminLoginLBtn.Visible = true;
+                    authorDetailsLBtn.Visible = false;
+                    publisherDetailsLBtn.Visible = false;
+                    inventoryDetailLBtn.Visible = false;
+                    inventoryDetailLBtn.Visible = false;
+                    userLoginLBtn.Visible = false;
+                }
+                else if (Session["Role"].Equals("User"))
+                {
+                    userSignUpLBtn.Visible = false;
+                    userLoginLBtn.Visible = false;
+                    logoutLBtn.Visible = true;
+                    helloUserLBtn.Visible = true;
+                    helloUserLBtn.Text = $"Hello { Session["Username"] }";
 
+                    adminLoginLBtn.Visible = true;
+                    authorDetailsLBtn.Visible = false;
+                    publisherDetailsLBtn.Visible = false;
+                    inventoryDetailLBtn.Visible = false;
+                    inventoryDetailLBtn.Visible = false;
+                    userLoginLBtn.Visible = false;
+                }
+                else if (Session["Role"].Equals("Admin"))
+                {
+                    userSignUpLBtn.Visible = false;
+                    userLoginLBtn.Visible = false;
+                    logoutLBtn.Visible = true;
+                    helloUserLBtn.Visible = true;
+                    helloUserLBtn.Text = $"Hello Admin"; // add a time stamp here!
 
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
+                    adminLoginLBtn.Visible = false;
+                    authorDetailsLBtn.Visible = true;
+                    publisherDetailsLBtn.Visible = true;
+                    inventoryDetailLBtn.Visible = true;
+                    inventoryDetailLBtn.Visible = true;
+                    userLoginLBtn.Visible = true;
+                }
+            }
+            catch (Exception ex)
+            {
 
-            //}
+            }
         }
 
         protected void AdminLoginLBtn_Click(object sender, EventArgs e)
@@ -79,6 +107,11 @@ namespace Bookstore.Web
         protected void UserSignUpLBtn_Click(object sender, EventArgs e)
         {
             Response.Redirect("UserSignup.aspx");
+        }
+
+        protected void LogoutLBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
