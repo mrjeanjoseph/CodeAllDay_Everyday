@@ -18,7 +18,7 @@
 
                         <div class="row">
                             <div class="col center">
-                                <h3>Member Login</h3>
+                                <h3>User Login</h3>
                                 <hr />
                             </div>
                         </div>
@@ -26,9 +26,12 @@
                         <div class="row">
                             <div class="col center">
                                 <a>Don't have an account?</a><br />
-                                <a href="UserSignup.aspx">Register here</a>
+                                <p>
+                                    <asp:LinkButton ID="userSignupBtn" runat="server" OnClick="UserSignupBtn_Click">Register here</asp:LinkButton>
+                                </p>                                
                             </div>
-                        </div><br />
+                        </div>
+                        <br />
 
                         <div class="row">
                             <div class="col">
@@ -55,7 +58,7 @@
                 </div>
                 <br />
 
-            </div> 
+            </div>
         </div>
     </div>
 

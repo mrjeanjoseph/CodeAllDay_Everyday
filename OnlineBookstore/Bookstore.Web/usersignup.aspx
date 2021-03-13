@@ -23,6 +23,15 @@
 
                         <div class="row">
                             <div class="col center">
+                                <a>Already have an account?</a><br />
+                                <a href="UserLogin.aspx">Login here</a>
+                            </div>
+                        </div>
+                        <br />
+
+
+                        <div class="row">
+                            <div class="col center">
                                 <hr />
                                 <br />
                             </div>
@@ -155,7 +164,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="homepage.aspx"><< Back to Home</a>
+                    <a href="Homepage.aspx"><< Back to Home</a>
                 </div>
                 <br />
             </div>

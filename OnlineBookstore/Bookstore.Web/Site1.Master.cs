@@ -111,7 +111,22 @@ namespace Bookstore.Web
 
         protected void LogoutLBtn_Click(object sender, EventArgs e)
         {
+            Session["Username"] = "";
+            Session["FullName"] = "";
+            Session["AccountStatus"] = "";
+            Session["Role"] = "";
 
+            userSignUpLBtn.Visible = true;
+            userLoginLBtn.Visible = true;
+            logoutLBtn.Visible = false;
+            helloUserLBtn.Visible = false;
+
+            adminLoginLBtn.Visible = true;
+            authorDetailsLBtn.Visible = false;
+            publisherDetailsLBtn.Visible = false;
+            inventoryDetailLBtn.Visible = false;
+            inventoryDetailLBtn.Visible = false;
+            userLoginLBtn.Visible = false;
         }
     }
 }
