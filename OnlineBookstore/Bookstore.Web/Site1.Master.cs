@@ -33,7 +33,7 @@ namespace Bookstore.Web
                     userLoginLBtn.Visible = false;
                     logoutLBtn.Visible = true;
                     helloUserLBtn.Visible = true;
-                    helloUserLBtn.Text = $"Hello { Session["Username"] }";
+                    helloUserLBtn.Text = $"Hello { Session["FullName"] }";
 
                     adminLoginLBtn.Visible = true;
                     authorDetailsLBtn.Visible = false;
@@ -60,6 +60,7 @@ namespace Bookstore.Web
             }
             catch (Exception ex)
             {
+                Response.Write("<script>alert('DEBBUG ERROR PAGE LOAD');</script>");
 
             }
         }
@@ -127,6 +128,8 @@ namespace Bookstore.Web
             inventoryDetailLBtn.Visible = false;
             inventoryDetailLBtn.Visible = false;
             userLoginLBtn.Visible = false;
+
+            Response.Redirect("Homepage.aspx");
         }
     }
 }

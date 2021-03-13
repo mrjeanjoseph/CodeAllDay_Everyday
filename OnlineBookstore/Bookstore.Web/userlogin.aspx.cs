@@ -52,7 +52,6 @@ namespace Bookstore.Web
             catch (Exception ex)
             {
                 Response.Write("<script>alert('Error 405! Please try again later');</script>");
-
             }
         }
 
