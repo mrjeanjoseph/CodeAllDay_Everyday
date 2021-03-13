@@ -25,7 +25,7 @@ namespace Bookstore.Web
                     publisherDetailsLBtn.Visible = false;
                     inventoryDetailLBtn.Visible = false;
                     inventoryDetailLBtn.Visible = false;
-                    userLoginLBtn.Visible = false;
+                    userProfileLBtn.Visible = false;
                 }
                 else if (Session["Role"].Equals("User"))
                 {
@@ -40,7 +40,7 @@ namespace Bookstore.Web
                     publisherDetailsLBtn.Visible = false;
                     inventoryDetailLBtn.Visible = false;
                     inventoryDetailLBtn.Visible = false;
-                    userLoginLBtn.Visible = false;
+                    userProfileLBtn.Visible = false;
                 }
                 else if (Session["Role"].Equals("Admin"))
                 {
@@ -55,13 +55,12 @@ namespace Bookstore.Web
                     publisherDetailsLBtn.Visible = true;
                     inventoryDetailLBtn.Visible = true;
                     inventoryDetailLBtn.Visible = true;
-                    userLoginLBtn.Visible = true;
+                    userProfileLBtn.Visible = true;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Response.Write("<script>alert('DEBBUG ERROR PAGE LOAD');</script>");
-
             }
         }
 
@@ -127,7 +126,7 @@ namespace Bookstore.Web
             publisherDetailsLBtn.Visible = false;
             inventoryDetailLBtn.Visible = false;
             inventoryDetailLBtn.Visible = false;
-            userLoginLBtn.Visible = false;
+            userProfileLBtn.Visible = false;
 
             Response.Redirect("Homepage.aspx");
         }
