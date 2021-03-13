@@ -13,7 +13,7 @@ namespace Bookstore.Web
         {
             try
             {
-                if (Session["Role"].Equals(""))
+                if (Session["role"].Equals(""))
                 {
                     userSignUpLBtn.Visible = true;
                     userLoginLBtn.Visible = true;
@@ -24,10 +24,10 @@ namespace Bookstore.Web
                     authorDetailsLBtn.Visible = false;
                     publisherDetailsLBtn.Visible = false;
                     inventoryDetailLBtn.Visible = false;
-                    inventoryDetailLBtn.Visible = false;
+                    bookDetailLBtn.Visible = false;
                     userProfileLBtn.Visible = false;
                 }
-                else if (Session["Role"].Equals("User"))
+                else if (Session["role"].Equals("user"))
                 {
                     userSignUpLBtn.Visible = false;
                     userLoginLBtn.Visible = false;
@@ -39,10 +39,10 @@ namespace Bookstore.Web
                     authorDetailsLBtn.Visible = false;
                     publisherDetailsLBtn.Visible = false;
                     inventoryDetailLBtn.Visible = false;
-                    inventoryDetailLBtn.Visible = false;
+                    bookDetailLBtn.Visible = false;
                     userProfileLBtn.Visible = false;
                 }
-                else if (Session["Role"].Equals("Admin"))
+                else if (Session["role"].Equals("admin"))
                 {
                     userSignUpLBtn.Visible = false;
                     userLoginLBtn.Visible = false;
@@ -54,13 +54,13 @@ namespace Bookstore.Web
                     authorDetailsLBtn.Visible = true;
                     publisherDetailsLBtn.Visible = true;
                     inventoryDetailLBtn.Visible = true;
-                    inventoryDetailLBtn.Visible = true;
+                    bookDetailLBtn.Visible = true;
                     userProfileLBtn.Visible = true;
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Response.Write("<script>alert('DEBBUG ERROR PAGE LOAD');</script>");
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
         }
 
@@ -114,7 +114,7 @@ namespace Bookstore.Web
             Session["Username"] = "";
             Session["FullName"] = "";
             Session["AccountStatus"] = "";
-            Session["Role"] = "";
+            Session["role"] = "";
 
             userSignUpLBtn.Visible = true;
             userLoginLBtn.Visible = true;

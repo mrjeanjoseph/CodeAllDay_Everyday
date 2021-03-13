@@ -37,7 +37,7 @@ namespace Bookstore.Web
                         Response.Write("<script>alert('Login Successfull!');</script>");
                         Session["Username"] = readDB.GetValue(0).ToString();
                         Session["FullName"] = readDB.GetValue(2).ToString();
-                        Session["Role"] = "Admin";
+                        Session["role"] = "admin";
                     }
                     Response.Redirect("Homepage.aspx");
                 }
@@ -49,7 +49,7 @@ namespace Bookstore.Web
             }
             catch (Exception ex)
             {
-                Response.Write("<script>alert('Error 405! Please try again later');</script>");
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
 
         }
