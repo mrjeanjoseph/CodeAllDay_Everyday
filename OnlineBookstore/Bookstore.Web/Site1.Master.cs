@@ -11,7 +11,28 @@ namespace Bookstore.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
+                if (Session["role"].Equals(""))
+                {
+                    userSignUpLBtn.Visible = true;
+                    userLoginLBtn.Visible = true;
+                    logoutLBtn.Visible = true;
+                    helloUserLBtn.Visible = true;
 
+                    adminLoginLBtn.Visible = true;
+                    authorProfileLBtn.Visible = true;
+                    publisherProfileLBtn.Visible = true;
+                    inventoryDetailLBtn.Visible = true;
+                    userLoginLBtn.Visible = true;
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         protected void AdminLoginLBtn_Click(object sender, EventArgs e)
@@ -41,7 +62,7 @@ namespace Bookstore.Web
 
         protected void MemberDetailBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("MemberDetails.aspx");
+            Response.Redirect("UserLogin.aspx");
         }
 
         protected void ViewBooksLBtn_Click(object sender, EventArgs e)

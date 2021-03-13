@@ -28,7 +28,7 @@ namespace Bookstore.Web
                     con.Open();
                 }
 
-                SqlCommand cmd = new SqlCommand("SELECT * FROM AdminLogin WHERE Username = '" + adminIdTxtBx.Text.Trim() + "' AND Password = '" + passwordTxtBx.Text.Trim() + "'", con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM AdminDetails WHERE Username = '" + adminIdTxtBx.Text.Trim() + "' AND Password = '" + passwordTxtBx.Text.Trim() + "'", con);
                 SqlDataReader readDB = cmd.ExecuteReader();
                 if (readDB.HasRows)
                 {

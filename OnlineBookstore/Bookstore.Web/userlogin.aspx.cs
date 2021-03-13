@@ -29,14 +29,19 @@ namespace Bookstore.Web
                     con.Open();
                 }
 
-                SqlCommand cmd = new SqlCommand("SELECT * FROM MemberDetails WHERE Username = '" + userNameTxtBx.Text.Trim() + "' AND Password = '" + passwordTxtBx.Text.Trim() + "'", con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM UserDetails WHERE Username = '" + userNameTxtBx.Text.Trim() + "' AND Password = '" + passwordTxtBx.Text.Trim() + "'", con);
                 SqlDataReader readDB = cmd.ExecuteReader();
                 if (readDB.HasRows)
                 {
                     while (readDB.Read())
                     {
                         Response.Write("<script>alert('Hello " + readDB.GetValue(1).ToString() + ", Welcome!');</script>");
+                        Session["Username"] = readDB.GetValue(0).ToString();
+                        Session["FullName"] = readDB.GetValue(1).ToString();
+                        Session["AccountStatus"] = readDB.GetValue(1).ToString();
+                        Session["User"] = "User";
                     }
+                    Response.Redirect("Homepage.aspx");
                 }
                 else
                 {
@@ -46,9 +51,9 @@ namespace Bookstore.Web
             }
             catch (Exception ex)
             {
+                Response.Write("<script>alert('Error 405! Please try again later');</script>");
 
             }
-
         }
     }
 }

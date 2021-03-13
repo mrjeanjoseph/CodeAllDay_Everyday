@@ -2468,24 +2468,27 @@
   },
   "packageFolders": {
     "C:\\Users\\Computer\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Computer\\source\\repos\\1 - CodingAllDayEveryday\\HotelApplication\\HotelApp.Desktop\\HotelApp.Desktop.csproj",
+      "projectUniqueName": "C:\\Users\\Computer\\source\\repos\\1 - GITHUB PROJECTS\\1 - CodingAllDayEveryday\\HotelApplication\\HotelApp.Desktop\\HotelApp.Desktop.csproj",
       "projectName": "HotelApp.Desktop",
-      "projectPath": "C:\\Users\\Computer\\source\\repos\\1 - CodingAllDayEveryday\\HotelApplication\\HotelApp.Desktop\\HotelApp.Desktop.csproj",
+      "projectPath": "C:\\Users\\Computer\\source\\repos\\1 - GITHUB PROJECTS\\1 - CodingAllDayEveryday\\HotelApplication\\HotelApp.Desktop\\HotelApp.Desktop.csproj",
       "packagesPath": "C:\\Users\\Computer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Computer\\source\\repos\\1 - CodingAllDayEveryday\\HotelApplication\\HotelApp.Desktop\\obj\\",
+      "outputPath": "C:\\Users\\Computer\\source\\repos\\1 - GITHUB PROJECTS\\1 - CodingAllDayEveryday\\HotelApplication\\HotelApp.Desktop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2500,8 +2503,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Computer\\source\\repos\\1 - CodingAllDayEveryday\\HotelApplication\\HotelAppLibray\\HotelAppLibray.csproj": {
-              "projectPath": "C:\\Users\\Computer\\source\\repos\\1 - CodingAllDayEveryday\\HotelApplication\\HotelAppLibray\\HotelAppLibray.csproj"
+            "C:\\Users\\Computer\\source\\repos\\1 - GITHUB PROJECTS\\1 - CodingAllDayEveryday\\HotelApplication\\HotelAppLibray\\HotelAppLibray.csproj": {
+              "projectPath": "C:\\Users\\Computer\\source\\repos\\1 - GITHUB PROJECTS\\1 - CodingAllDayEveryday\\HotelApplication\\HotelAppLibray\\HotelAppLibray.csproj"
             }
           }
         }
@@ -2551,7 +2554,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

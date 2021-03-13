@@ -69,13 +69,13 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.LinkButton logoutLBtn;
 
         /// <summary>
-        /// LinkButton5 control.
+        /// helloUserLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton5;
+        protected global::System.Web.UI.WebControls.LinkButton helloUserLBtn;
 
         /// <summary>
         /// body control.
@@ -96,48 +96,48 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.LinkButton adminLoginLBtn;
 
         /// <summary>
-        /// authorProfileBtn control.
+        /// authorProfileLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton authorProfileBtn;
+        protected global::System.Web.UI.WebControls.LinkButton authorProfileLBtn;
 
         /// <summary>
-        /// publisherProfileBtn control.
+        /// publisherProfileLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton publisherProfileBtn;
+        protected global::System.Web.UI.WebControls.LinkButton publisherProfileLBtn;
 
         /// <summary>
-        /// inventoryDetailBtn control.
+        /// inventoryDetailLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton inventoryDetailBtn;
+        protected global::System.Web.UI.WebControls.LinkButton inventoryDetailLBtn;
 
         /// <summary>
-        /// bookDetailBtn control.
+        /// bookDetailLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton bookDetailBtn;
+        protected global::System.Web.UI.WebControls.LinkButton bookDetailLBtn;
 
         /// <summary>
-        /// memberDetailBtn control.
+        /// userProfileLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton memberDetailBtn;
+        protected global::System.Web.UI.WebControls.LinkButton userProfileLBtn;
     }
 }
