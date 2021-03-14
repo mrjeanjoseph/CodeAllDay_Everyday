@@ -94,7 +94,11 @@
                         <div class="row">
                             <div class="col center">
                                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:eLibraryDBConnectionString %>" SelectCommand="SELECT * FROM [PublisherDetails]"></asp:SqlDataSource>
-                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server">
+                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="PublisherId" DataSourceID="SqlDataSource1">
+                                    <Columns>
+                                        <asp:BoundField DataField="PublisherId" HeaderText="PublisherId" ReadOnly="True" SortExpression="PublisherId" />
+                                        <asp:BoundField DataField="PublisherName" HeaderText="PublisherName" SortExpression="PublisherName" />
+                                    </Columns>
                                 </asp:GridView>
                             </div>
                         </div>

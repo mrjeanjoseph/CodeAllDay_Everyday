@@ -101,7 +101,7 @@ namespace Bookstore.Web
             }
             else
             {
-                Response.Write("<script>alert('Author Detail does not exist');</script>");
+                Response.Write("<script>alert('Publisher Detail does not exist');</script>");
                 ClearForm();
             }
         }
@@ -135,15 +135,15 @@ namespace Bookstore.Web
         {
             if (CheckPublisherExists())
             {
-                DeleteAuthorDetail();
+                DeletePublisherDetail();
             }
             else
             {
-                Response.Write("<script>alert('Author Detail has been deleted');</script>");
+                Response.Write("<script>alert('Publisher detail has been deleted');</script>");
                 ClearForm();
             }
         }
-        private void DeleteAuthorDetail() // User Defined Function
+        private void DeletePublisherDetail() // User Defined Function
         {
             try
             {
@@ -157,7 +157,7 @@ namespace Bookstore.Web
 
                 cmd.ExecuteNonQuery();
                 con.Close();
-                Response.Write("<script>alert('Publisher Detail Deleted successfully.');</script>");
+                Response.Write("<script>alert('Publisher details deleted successfully.');</script>");
                 ClearForm();
                 GridView1.DataBind();
             }
