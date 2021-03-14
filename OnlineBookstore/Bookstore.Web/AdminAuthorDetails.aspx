@@ -1,6 +1,19 @@
 ﻿<%@ Page Title="Admin - Author Details" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="AdminAuthorDetails.aspx.cs" Inherits="Bookstore.Web.authorlogin" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            /*$(document).ready(function () {
+                $('.table').DataTable();
+            });*/
+
+            $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+            //$(.table).DataTable();
+        });
+    </script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 
