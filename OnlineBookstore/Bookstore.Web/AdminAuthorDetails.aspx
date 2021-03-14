@@ -33,7 +33,7 @@
                             <div class="col-md-5">
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="authorIdTxtBx" placeholder="Author Id" runat="server"></asp:TextBox>
+                                        <asp:TextBox class="form-control" ID="authorIdTxtBx" placeholder="Id" runat="server"></asp:TextBox>
                                         <asp:Button ID="searchBtn" class="btn btn-primary" runat="server" Text="Search" />
                                     </div>
                                 </div>
@@ -50,13 +50,13 @@
 
                         <div class="row mr-auto">
                             <div class="col-4">
-                                <asp:Button ID="addBtn" class="btn btn-success w-100" runat="server" Text="Add" />
+                                <asp:Button ID="addBtn" class="btn btn-success w-100" runat="server" Text="Add" OnClick="AddBtn_Click" />
                             </div>
-                            <div class="col">
-                                <asp:Button ID="updateBtn" class="btn btn-warning w-100" runat="server" Text="Update" />
+                            <div class="col-4">
+                                <asp:Button ID="updateBtn" class="btn btn-warning w-100" runat="server" Text="Update" OnClick="UpdateBtn_Click" />
                             </div>
-                            <div class="col">
-                                <asp:Button ID="deleteBtn" class="btn btn-danger w-100" runat="server" Text="Delete" />
+                            <div class="col-4">
+                                <asp:Button ID="deleteBtn" class="btn btn-danger w-100" runat="server" Text="Delete" OnClick="DeleteBtn_Click" />
                             </div>
                         </div>
                     </div>

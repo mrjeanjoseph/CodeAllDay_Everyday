@@ -21,7 +21,7 @@ namespace Bookstore.Web
 
         protected void RegisterBtn_Click(object sender, EventArgs e)
         {
-            if (CheckMemberExists())
+            if (CheckUserExists())
             {
                 Response.Write("<script>alert('Username taken. Please try a different username');</script>");
             }
@@ -31,7 +31,7 @@ namespace Bookstore.Web
             } 
         }
 
-        bool CheckMemberExists()
+        bool CheckUserExists()
         {
             try
             {
