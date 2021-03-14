@@ -136,7 +136,36 @@ namespace Bookstore.Web
 
         protected void SearchBtn_Click(object sender, EventArgs e)
         {
+            SearchAuthorById();
+        }
+        private void SearchAuthorById() // User defined function
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
 
+                SqlCommand cmd = new SqlCommand("SELECT * from AuthorDetails where AuthorId = '" + authorIdTxtBx.Text.Trim() + "';", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count >= 1)
+                {
+                    authorNameTxtBx.Text = dt.Rows[0][1].ToString();
+                }
+                else
+                {
+                    Response.Write("<script>alert('Author Id does not exist');</script>");
+                }
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
+            }
         }
 
         bool CheckAuthorExists()

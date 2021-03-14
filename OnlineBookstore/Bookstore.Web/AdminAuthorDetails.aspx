@@ -4,13 +4,7 @@
     <script type="text/javascript">
 
         $(document).ready(function () {
-
-            /*$(document).ready(function () {
-                $('.table').DataTable();
-            });*/
-
             $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
-            //$(.table).DataTable();
         });
     </script>
 
