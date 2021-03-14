@@ -11,7 +11,7 @@ namespace Bookstore.Web
 {
 
 
-    public partial class userprofile
+    public partial class Userprofile
     {
 
         /// <summary>

@@ -51,7 +51,6 @@ namespace Bookstore.Web
             {
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
-
         }
     }
 }

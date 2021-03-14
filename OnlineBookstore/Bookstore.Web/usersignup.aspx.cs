@@ -41,7 +41,7 @@ namespace Bookstore.Web
                     con.Open();
                 }
 
-                SqlCommand cmd = new SqlCommand("SELECT * from MemberDetails where Username = '" + usernameTxtBx.Text.Trim() + "';", con);
+                SqlCommand cmd = new SqlCommand("SELECT * from UserDetails where Username = '" + usernameTxtBx.Text.Trim() + "';", con);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
@@ -77,7 +77,7 @@ namespace Bookstore.Web
                     con.Open();
                 }
 
-                SqlCommand cmd = new SqlCommand("INSERT INTO MemberDetails (Username, FullName, BirthDate, ContactNumber, Email, StreetAddress1, StreetAddress2, City, State, ZipCode, AccountStatus, Password, ConfirmPass) values (@Username, @FullName, @BirthDate, @ContactNumber, @Email, @StreetAddress1, @StreetAddress2, @City, @State, @ZipCode, @AccountStatus, @Password, @ConfirmPass)", con);
+                SqlCommand cmd = new SqlCommand("INSERT INTO UserDetails (Username, FullName, BirthDate, ContactNumber, Email, StreetAddress1, StreetAddress2, City, State, ZipCode, AccountStatus, Password, ConfirmPass) values (@Username, @FullName, @BirthDate, @ContactNumber, @Email, @StreetAddress1, @StreetAddress2, @City, @State, @ZipCode, @AccountStatus, @Password, @ConfirmPass)", con);
 
                 cmd.Parameters.AddWithValue("@Username", usernameTxtBx.Text.Trim());
                 cmd.Parameters.AddWithValue("@FullName", fullNameTxtBx.Text.Trim());

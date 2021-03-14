@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace Bookstore.Web
 {
-    public partial class userlogin : System.Web.UI.Page
+    public partial class Userlogin : System.Web.UI.Page
     {
         readonly string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
 
