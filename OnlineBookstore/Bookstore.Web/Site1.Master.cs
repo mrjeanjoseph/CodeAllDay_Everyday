@@ -23,9 +23,9 @@ namespace Bookstore.Web
                     adminLoginLBtn.Visible = true;
                     authorDetailsLBtn.Visible = false;
                     publisherDetailsLBtn.Visible = false;
-                    inventoryDetailLBtn.Visible = false;
-                    bookDetailLBtn.Visible = false;
-                    userProfileLBtn.Visible = false;
+                    inventoryDetailsLBtn.Visible = false;
+                    bookDetailsLBtn.Visible = false;
+                    userDetailsLBtn.Visible = false;
                 }
                 else if (Session["role"].Equals("user"))
                 {
@@ -38,9 +38,9 @@ namespace Bookstore.Web
                     adminLoginLBtn.Visible = true;
                     authorDetailsLBtn.Visible = false;
                     publisherDetailsLBtn.Visible = false;
-                    inventoryDetailLBtn.Visible = false;
-                    bookDetailLBtn.Visible = false;
-                    userProfileLBtn.Visible = false;
+                    inventoryDetailsLBtn.Visible = false;
+                    bookDetailsLBtn.Visible = false;
+                    userDetailsLBtn.Visible = false;
                 }
                 else if (Session["role"].Equals("admin"))
                 {
@@ -53,9 +53,9 @@ namespace Bookstore.Web
                     adminLoginLBtn.Visible = false;
                     authorDetailsLBtn.Visible = true;
                     publisherDetailsLBtn.Visible = true;
-                    inventoryDetailLBtn.Visible = true;
-                    bookDetailLBtn.Visible = true;
-                    userProfileLBtn.Visible = true;
+                    inventoryDetailsLBtn.Visible = true;
+                    bookDetailsLBtn.Visible = true;
+                    userDetailsLBtn.Visible = true;
                 }
             }
             catch (Exception ex)
@@ -79,17 +79,17 @@ namespace Bookstore.Web
             Response.Redirect("AdminPublisherDetails.aspx");
         }
 
-        protected void InventoryDetailLBtn_Click(object sender, EventArgs e)
+        protected void InventoryDetailsLBtn_Click(object sender, EventArgs e)
         {
             Response.Redirect("InventoryDetails.aspx");
         }
 
-        protected void BookDetailLBtn_Click(object sender, EventArgs e)
+        protected void BookDetailsLBtn_Click(object sender, EventArgs e)
         {
             Response.Redirect("AdminBookDetails.aspx");
         }
 
-        protected void UserProfileLBtn_Click(object sender, EventArgs e)
+        protected void UserDetailsLBtn_Click(object sender, EventArgs e)
         {
             Response.Redirect("AdminUserDetails.aspx");
         }
@@ -124,9 +124,9 @@ namespace Bookstore.Web
             adminLoginLBtn.Visible = true;
             authorDetailsLBtn.Visible = false;
             publisherDetailsLBtn.Visible = false;
-            inventoryDetailLBtn.Visible = false;
-            inventoryDetailLBtn.Visible = false;
-            userProfileLBtn.Visible = false;
+            inventoryDetailsLBtn.Visible = false;
+            inventoryDetailsLBtn.Visible = false;
+            userDetailsLBtn.Visible = false;
 
             Response.Redirect("Homepage.aspx");
         }

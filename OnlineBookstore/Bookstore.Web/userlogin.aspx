@@ -27,7 +27,7 @@
                             <div class="col center">
                                 <a>Don't have an account?</a><br />
                                 <p>
-                                    <asp:LinkButton ID="userSignupBtn" runat="server" OnClick="UserSignupBtn_Click">Register here</asp:LinkButton>
+                                    <asp:LinkButton ID="userSignupBtn" runat="server" OnClick="UserSignupLBtn_Click">Register here</asp:LinkButton>
                                 </p>                                
                             </div>
                         </div>

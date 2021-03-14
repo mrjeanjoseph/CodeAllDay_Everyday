@@ -55,7 +55,7 @@ namespace Bookstore.Web
             }
         }
 
-        protected void UserSignupBtn_Click(object sender, EventArgs e)
+        protected void UserSignupLBtn_Click(object sender, EventArgs e)
         {
             Response.Redirect("UserSignup.aspx");
         }

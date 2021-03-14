@@ -54,14 +54,10 @@ namespace Bookstore.Web
                 {
                     return false;
                 }
-
-
-                con.Close();
-                Response.Write("<script>alert('Sign up successfull. Go to user Login page');</script>");
-
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
                 return false;
             }
         }
