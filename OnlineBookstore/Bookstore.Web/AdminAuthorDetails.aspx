@@ -34,7 +34,7 @@
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="authorIdTxtBx" placeholder="Id" runat="server"></asp:TextBox>
-                                        <asp:Button ID="searchBtn" class="btn btn-primary" runat="server" Text="Search" OnClick="searchBtn_Click" />
+                                        <asp:Button ID="searchBtn" class="btn btn-primary" runat="server" Text="Search" OnClick="SearchBtn_Click" />
                                     </div>
                                 </div>
                                 <br />
@@ -89,7 +89,12 @@
 
                         <div class="row">
                             <div class="col center">
-                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server">
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:eLibraryDBConnectionString %>" SelectCommand="SELECT * FROM [AuthorDetails]"></asp:SqlDataSource>
+                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="AuthorId" DataSourceID="SqlDataSource1">
+                                    <Columns>
+                                        <asp:BoundField DataField="AuthorId" HeaderText="AuthorId" ReadOnly="True" SortExpression="AuthorId" />
+                                        <asp:BoundField DataField="AuthorName" HeaderText="AuthorName" SortExpression="AuthorName" />
+                                    </Columns>
                                 </asp:GridView>
                             </div>
                         </div>

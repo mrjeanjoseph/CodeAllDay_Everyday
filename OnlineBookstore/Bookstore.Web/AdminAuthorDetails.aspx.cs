@@ -16,7 +16,7 @@ namespace Bookstore.Web
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            GridView1.DataBind();
         }
 
         protected void AddBtn_Click(object sender, EventArgs e)
@@ -24,24 +24,117 @@ namespace Bookstore.Web
             if (CheckAuthorExists())
             {
                 Response.Write("<script>alert('This id already exists in the database.');</script>");
+                ClearForm();
             }
             else
             {
                 AddNewAuthor();
             }
         }
+        private void AddNewAuthor() // User defined function
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+
+                SqlCommand cmd = new SqlCommand("INSERT INTO AuthorDetails (AuthorId, AuthorName) values (@AuthorId, @AuthorName)", con);
+
+                cmd.Parameters.AddWithValue("@AuthorId", authorIdTxtBx.Text.Trim());
+                cmd.Parameters.AddWithValue("@AuthorName", authorNameTxtBx.Text.Trim());
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+                Response.Write("<script>alert('Author Detail added successfully.');</script>");
+                ClearForm();
+                GridView1.DataBind();
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
+            }
+
+        }
 
         protected void UpdateBtn_Click(object sender, EventArgs e)
         {
+            if (CheckAuthorExists())
+            {
+                UpdateAuthorDetail();
+            }
+            else
+            {
+                Response.Write("<script>alert('Author Detail does not exist');</script>");
+                ClearForm();
+            }
+        }
+        private void UpdateAuthorDetail() // User Defined function
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
 
+                SqlCommand cmd = new SqlCommand("UPDATE AuthorDetails SET AuthorName = @AuthorName WHERE AuthorId = '"+authorIdTxtBx.Text.Trim()+"'", con);
+
+                cmd.Parameters.AddWithValue("@AuthorName", authorNameTxtBx.Text.Trim());
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+                Response.Write("<script>alert('Author Detail updated successfully.');</script>");
+                ClearForm();
+                GridView1.DataBind();
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
+            }
         }
 
         protected void DeleteBtn_Click(object sender, EventArgs e)
         {
+            if (CheckAuthorExists())
+            {
+                DeleteAuthorDetail();
+            }
+            else
+            {
+                Response.Write("<script>alert('Author Detail has been deleted');</script>");
+                ClearForm();
+            }
+        }
+        private void DeleteAuthorDetail() // User Defined Function
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+
+                SqlCommand cmd = new SqlCommand("DELETE AuthorDetails WHERE AuthorId = '" + authorIdTxtBx.Text.Trim() + "'", con);
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+                Response.Write("<script>alert('Author Detail Deleted successfully.');</script>");
+                ClearForm();
+                GridView1.DataBind();
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
+            }
 
         }
 
-        protected void searchBtn_Click(object sender, EventArgs e)
+        protected void SearchBtn_Click(object sender, EventArgs e)
         {
 
         }
@@ -68,6 +161,7 @@ namespace Bookstore.Web
                 else
                 {
                     return false;
+
                 }
             }
             catch (Exception ex)
@@ -76,31 +170,10 @@ namespace Bookstore.Web
                 return false;
             }
         }
-
-        void AddNewAuthor()
+        private void ClearForm()
         {
-            try
-            {
-                SqlConnection con = new SqlConnection(strcon);
-                if (con.State == ConnectionState.Closed)
-                {
-                    con.Open();
-                }
-
-                SqlCommand cmd = new SqlCommand("INSERT INTO AuthorDetails (AuthorId, AuthorName) values (@AuthorId, @AuthorName)", con);
-
-                cmd.Parameters.AddWithValue("@AuthorId", authorIdTxtBx.Text.Trim());
-                cmd.Parameters.AddWithValue("@AuthorName", authorNameTxtBx.Text.Trim());
-
-                cmd.ExecuteNonQuery();
-                con.Close();
-                Response.Write("<script>alert('Author Detail added successfully.');</script>");
-            }
-            catch (Exception ex)
-            {
-                Response.Write("<script>alert('" + ex.Message + "');</script>");
-            }
-
+            authorNameTxtBx.Text = "";
+            authorIdTxtBx.Text = "";
         }
     }
 }
