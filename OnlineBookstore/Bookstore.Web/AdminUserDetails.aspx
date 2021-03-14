@@ -1,6 +1,14 @@
 ﻿<%@ Page Title="Admin - User Profile" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="AdminUserDetails.aspx.cs" Inherits="Bookstore.Web.adminprofile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+            <script type="text/javascript">
+
+        $(document).ready(function () {
+            $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+        });
+            </script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 
@@ -139,7 +147,7 @@
 
                         <div class="row">
                             <div class="col center mx-auto">
-                                <asp:Button ID="deletePBtn" class="btn btn-danger w-50" runat="server" Text="Delete User Permanantly" />
+                                <asp:Button ID="deletePBtn" class="btn btn-danger w-50" runat="server" Text="Delete User Permanently" OnClick="deletePBtn_Click" />
                             </div>
                         </div>
                     </div>
@@ -171,7 +179,15 @@
 
                         <div class="row">
                             <div class="col center">
-                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server">
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:eLibraryDBConnectionString %>" SelectCommand="SELECT * FROM [UserDetails]"></asp:SqlDataSource>
+                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Username" DataSourceID="SqlDataSource1">
+                                    <Columns>
+                                        <asp:BoundField DataField="Username" HeaderText="User Name" ReadOnly="True" SortExpression="Username" />
+                                        <asp:BoundField DataField="FullName" HeaderText="Name" />
+                                        <asp:BoundField DataField="AccountStatus" HeaderText="Status" SortExpression="AccountStatus" />
+                                        <asp:BoundField DataField="ContactNumber" HeaderText="Contact Number" />
+                                        <asp:BoundField DataField="Email" HeaderText="Email Address" />
+                                    </Columns>
                                 </asp:GridView>
                             </div>
                         </div>
