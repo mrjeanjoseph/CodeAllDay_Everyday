@@ -34,7 +34,7 @@
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="authorIdTxtBx" placeholder="Id" runat="server"></asp:TextBox>
-                                        <asp:Button ID="searchBtn" class="btn btn-primary" runat="server" Text="Search" />
+                                        <asp:Button ID="searchBtn" class="btn btn-primary" runat="server" Text="Search" OnClick="searchBtn_Click" />
                                     </div>
                                 </div>
                                 <br />

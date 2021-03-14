@@ -25,6 +25,10 @@ namespace Bookstore.Web
             {
                 Response.Write("<script>alert('Author Id is already in the database.');</script>");
             }
+            else
+            {
+                AddNewAuthor();
+            }
         }
 
         protected void UpdateBtn_Click(object sender, EventArgs e)
@@ -71,6 +75,32 @@ namespace Bookstore.Web
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
                 return false;
             }
+        }
+
+        void AddNewAuthor()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+
+                SqlCommand cmd = new SqlCommand("INSERT INTO AuthorDetails (AuthorId, AuthorName) values (@AuthorId, @AuthorName)", con);
+
+                cmd.Parameters.AddWithValue("@AuthorId", authorIdTxtBx.Text.Trim());
+                cmd.Parameters.AddWithValue("@AuthorName", authorNameTxtBx.Text.Trim());
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+                Response.Write("<script>alert('Authod Detail added successfully.');</script>");
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
+            }
+
         }
     }
 }
