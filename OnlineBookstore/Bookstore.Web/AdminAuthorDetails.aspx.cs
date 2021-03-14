@@ -23,7 +23,7 @@ namespace Bookstore.Web
         {
             if (CheckAuthorExists())
             {
-                Response.Write("<script>alert('Author Id is already in the database.');</script>");
+                Response.Write("<script>alert('This id already exists in the database.');</script>");
             }
             else
             {
@@ -94,7 +94,7 @@ namespace Bookstore.Web
 
                 cmd.ExecuteNonQuery();
                 con.Close();
-                Response.Write("<script>alert('Authod Detail added successfully.');</script>");
+                Response.Write("<script>alert('Author Detail added successfully.');</script>");
             }
             catch (Exception ex)
             {
