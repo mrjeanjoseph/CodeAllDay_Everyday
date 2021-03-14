@@ -15,13 +15,13 @@ namespace Bookstore.Web
     {
 
         /// <summary>
-        /// memberIdTxtBx control.
+        /// userIdTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox memberIdTxtBx;
+        protected global::System.Web.UI.WebControls.TextBox userIdTxtBx;
 
         /// <summary>
         /// searchLBtn control.
@@ -33,13 +33,13 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.LinkButton searchLBtn;
 
         /// <summary>
-        /// memberNameTxtBx control.
+        /// fullNameTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox memberNameTxtBx;
+        protected global::System.Web.UI.WebControls.TextBox fullNameTxtBx;
 
         /// <summary>
         /// statusTxtBx control.

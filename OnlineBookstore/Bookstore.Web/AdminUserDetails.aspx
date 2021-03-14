@@ -21,7 +21,7 @@
                         <div class="row">
                             <div class="col center">
                                 <h3>Admin</h3>
-                                <h4>Member Details</h4>
+                                <h4>User Details</h4>
                             </div>
                         </div>
 
@@ -42,7 +42,8 @@
                             <div class="col-md-3">
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="memberIdTxtBx" placeholder="Id" runat="server" ReadOnly="True"></asp:TextBox><asp:LinkButton ID="searchLBtn" CssClass="btn btn-primary" runat="server"><i class="fas fa-search"></i></asp:LinkButton>
+                                        <asp:TextBox class="form-control" ID="userIdTxtBx" placeholder="Id" runat="server"></asp:TextBox>
+                                        <asp:LinkButton ID="searchLBtn" CssClass="btn btn-primary" runat="server" OnClick="SearchLBtn_Click"><i class="fas fa-search"></i></asp:LinkButton>
                                     </div>
                                 </div>
                                 <br />
@@ -50,7 +51,7 @@
                             <div class="col-md-4">
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox class="form-control" ID="memberNameTxtBx" placeholder="Member Name" runat="server" ReadOnly="True"></asp:TextBox>
+                                        <asp:TextBox class="form-control" ID="fullNameTxtBx" placeholder="Full Name" runat="server" ReadOnly="True"></asp:TextBox>
                                     </div>
                                 </div>
                                 <br />

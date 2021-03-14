@@ -13,7 +13,6 @@ namespace Bookstore.Web
     public partial class authorlogin : System.Web.UI.Page
     {
         readonly string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
-
         protected void Page_Load(object sender, EventArgs e)
         {
             GridView1.DataBind();
