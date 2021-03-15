@@ -45,7 +45,6 @@ namespace Bookstore.Web
                 {
                     Response.Write("<script>alert('Username and password entered is invalid');</script>");
                 }
-
             }
             catch (Exception ex)
             {

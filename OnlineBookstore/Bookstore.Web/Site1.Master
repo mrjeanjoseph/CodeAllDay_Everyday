@@ -49,7 +49,7 @@
                             <a class="nav-link" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Terms</a>
+                            <a class="nav-link" href="#">Terms of Use</a>
                         </li>
                     </ul>
 
@@ -58,12 +58,11 @@
                             <asp:LinkButton CssClass="nav-link" ID="viewBooksLBtn" runat="server" Visible="False" OnClick="ViewBooksLBtn_Click">View Books</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton CssClass="nav-link" ID="userLoginLBtn" runat="server" Visible="False" OnClick="UserLoginLBtn_Click">User Login</asp:LinkButton>
+                            <asp:LinkButton CssClass="nav-link" ID="userLoginLBtn" runat="server" OnClick="UserLoginLBtn_Click">User Login</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton CssClass="nav-link" ID="userSignUpLBtn" runat="server" Visible="False" OnClick="UserSignUpLBtn_Click">Sign Up</asp:LinkButton>
+                            <asp:LinkButton CssClass="nav-link" ID="userSignUpLBtn" runat="server" OnClick="UserSignUpLBtn_Click">Sign Up</asp:LinkButton>
                         </li>
-
                         <li class="nav-item active">
                             <asp:LinkButton CssClass="nav-link" ID="logoutLBtn" runat="server" Visible="False" OnClick="LogoutLBtn_Click">Logout</asp:LinkButton>
                         </li>
@@ -90,7 +89,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-ms-12 col-md-12 text-center">
                         <p>
-                            <asp:LinkButton CssClass="footerlinks" ID="adminLoginLBtn" runat="server" OnClick="AdminLoginLBtn_Click" Visible="False" >Admin Login</asp:LinkButton>
+                            <asp:LinkButton CssClass="footerlinks" ID="adminLoginLBtn" runat="server" OnClick="AdminLoginLBtn_Click">Admin Login</asp:LinkButton>
                             <asp:LinkButton CssClass="footerlinks" ID="userDetailsLBtn" runat="server" OnClick="UserDetailsLBtn_Click" Visible="False">User Details</asp:LinkButton>
                             <asp:LinkButton CssClass="footerlinks" ID="authorDetailsLBtn" runat="server" OnClick="AuthorDetailsLBtn_Click" Visible="False">Author Details</asp:LinkButton>
                             <asp:LinkButton CssClass="footerlinks" ID="publisherDetailsLBtn" runat="server" OnClick="PublisherDetailsLBtn_Click" Visible="False">Publisher Details</asp:LinkButton>

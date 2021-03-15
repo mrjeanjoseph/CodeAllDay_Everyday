@@ -10,32 +10,15 @@ namespace Bookstore.Web
     public partial class Site1 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
+        {/*
             try
             {
-                if (Session["role"].Equals(""))
-                {
-                    userSignUpLBtn.Visible = true;
-                    userLoginLBtn.Visible = true;
-                    adminLoginLBtn.Visible = true;
-                    viewBooksLBtn.Visible = true;
-
-
-                    //logoutLBtn.Visible = false;
-                    //helloUserLBtn.Visible = false;
-                    //authorDetailsLBtn.Visible = false;
-                    //publisherDetailsLBtn.Visible = false;
-                    //inventoryDetailsLBtn.Visible = false;
-                    //bookDetailsLBtn.Visible = false;
-                    //userDetailsLBtn.Visible = false;
-                }
-                else if (Session["role"].Equals("user"))
+                if (Session["role"].Equals("user"))
                 {
                     logoutLBtn.Visible = true;
                     helloUserLBtn.Visible = true;
                     helloUserLBtn.Text = $"Hello { Session["FullName"] }";
                     viewBooksLBtn.Visible = true;
-
 
                     //userSignUpLBtn.Visible = false;
                     //userLoginLBtn.Visible = false;
@@ -47,6 +30,7 @@ namespace Bookstore.Web
                     //bookDetailsLBtn.Visible = false;
                     //userDetailsLBtn.Visible = false;
                 }
+
                 else if (Session["role"].Equals("admin"))
                 {
                     logoutLBtn.Visible = true;
@@ -65,11 +49,27 @@ namespace Bookstore.Web
                     bookDetailsLBtn.Visible = true;
                     userDetailsLBtn.Visible = true;
                 }
+
+                else
+                {
+                    userSignUpLBtn.Visible = true;
+                    userLoginLBtn.Visible = true;
+                    adminLoginLBtn.Visible = true;
+                    viewBooksLBtn.Visible = true;
+
+                    //logoutLBtn.Visible = false;
+                    //helloUserLBtn.Visible = false;
+                    //authorDetailsLBtn.Visible = false;
+                    //publisherDetailsLBtn.Visible = false;
+                    //inventoryDetailsLBtn.Visible = false;
+                    //bookDetailsLBtn.Visible = false;
+                    //userDetailsLBtn.Visible = false;
+                }
             }
             catch (Exception ex)
             {
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
-            }
+            }*/
         }
 
         protected void AdminLoginLBtn_Click(object sender, EventArgs e)
