@@ -61,7 +61,7 @@ namespace Bookstore.Web
                     con.Open();
                 }
 
-                SqlCommand cmd = new SqlCommand("DELETE UserDetails WHERE Username = '" + deleteUserLBtn.Text.Trim() + "'", con);
+                SqlCommand cmd = new SqlCommand("DELETE UserDetails WHERE Username = '" + userIdTxtBx.Text.Trim() + "'", con);
 
                 cmd.ExecuteNonQuery();
                 con.Close();
