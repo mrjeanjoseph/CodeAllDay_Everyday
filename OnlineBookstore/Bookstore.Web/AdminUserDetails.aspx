@@ -40,6 +40,7 @@
 
                         <div class="row">
                             <div class="col-md-3">
+                                    <label>User Id</label>
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="userIdTxtBx" placeholder="Id" runat="server"></asp:TextBox>
@@ -49,6 +50,7 @@
                                 <br />
                             </div>
                             <div class="col-md-4">
+                                <label>Full Name</label>
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="fullNameTxtBx" placeholder="Full Name" runat="server" ReadOnly="True"></asp:TextBox>
@@ -59,15 +61,16 @@
 
                             <%--The Margin between the three linked buttons are not padded. Look into that!--%>
                             <div class="col-md-5">
+                                <label>Account Status</label>
                                 <div class="form-group center">
                                     <div class="input-group">
-                                        <asp:TextBox CssClass="form-control mr-1" ID="statusTxtBx" placeholder="Status" runat="server" ReadOnly="True"></asp:TextBox>
+                                        <asp:TextBox CssClass="form-control" ID="statusTxtBx" placeholder="Status" runat="server" ReadOnly="True"></asp:TextBox>
 
-                                        <asp:LinkButton ID="userActiveBtn" class="btn btn-success mr-1" runat="server"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                                        <asp:LinkButton ID="userActiveLBtn" class="btn btn-success" runat="server" OnClick="UserActiveLBtn_Click"><i class="fas fa-check-circle"></i></asp:LinkButton>
 
-                                        <asp:LinkButton ID="userPendingBtn" class="btn btn-warning mr-1" runat="server"><i class="far fa-pause-circle"></i></asp:LinkButton>
+                                        <asp:LinkButton ID="userPendingLBtn" class="btn btn-warning" runat="server" OnClick="UserPendingLBtn_Click"><i class="far fa-pause-circle"></i></asp:LinkButton>
 
-                                        <asp:LinkButton ID="userDeleteBtn" class="btn btn-danger mr-1" runat="server"><i class="fas fa-trash-alt"></i></asp:LinkButton>
+                                        <asp:LinkButton ID="userInactiveLBtn" class="btn btn-danger" runat="server" OnClick="UserInactiveLBtn_Click"><i class="fas fa-trash-alt"></i></asp:LinkButton>
 
                                     </div>
                                 </div>
@@ -77,6 +80,7 @@
 
                         <div class="row">
                             <div class="col-md-3">
+                                <label>Date of Birth</label>
                                 <div class="form-group center">
                                     <asp:TextBox class="form-control" ID="birthDateTxtBx" placeholder="DoB" runat="server" ReadOnly="True"></asp:TextBox>
 
@@ -84,6 +88,7 @@
                                 <br />
                             </div>
                             <div class="col-md-4">
+                                <label>Phone Number</label>
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="contactNumTxtBx" placeholder="Contact No." runat="server" ReadOnly="True"></asp:TextBox>
@@ -92,6 +97,7 @@
                                 <br />
                             </div>
                             <div class="col-md-5">
+                                <label>Email Address</label>
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="emailTxtBx" placeholder="Email" runat="server" ReadOnly="True"></asp:TextBox>
@@ -103,6 +109,7 @@
 
                         <div class="row">
                             <div class="col-6">
+                                <label>Address 1</label>
                                 <div class="form-group center">
                                     <asp:TextBox class="form-control" ID="addressTxtBx1" placeholder="Address 1" runat="server" ReadOnly="True" TextMode="MultiLine" Rows="1"></asp:TextBox>
 
@@ -111,6 +118,7 @@
                             </div>
 
                             <div class="col-6">
+                                <label>Address 2</label>
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="addressTxtBx2" placeholder="Address 2" runat="server" ReadOnly="True" TextMode="MultiLine" Rows="1"></asp:TextBox>
@@ -122,13 +130,15 @@
 
                         <div class="row">
                             <div class="col-md-4">
+                            <label>City</label>
                                 <div class="form-group center">
-                                    <asp:TextBox class="form-control" ID="cityTxtBx" placeholder="State" runat="server" ReadOnly="True"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="cityTxtBx" placeholder="City" runat="server" ReadOnly="True"></asp:TextBox>
 
                                 </div>
                                 <br />
                             </div>
                             <div class="col-md-4">
+                                <label>State</label>
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="stateTxtBx" placeholder="State" runat="server" ReadOnly="True"></asp:TextBox>
@@ -137,6 +147,7 @@
                                 <br />
                             </div>
                             <div class="col-md-4">
+                                <label>Zip Code</label>
                                 <div class="form-group center">
                                     <div class="input-group">
                                         <asp:TextBox class="form-control" ID="zipCodeTxtBx" placeholder="Zip Code" runat="server" ReadOnly="True"></asp:TextBox>
@@ -148,11 +159,10 @@
 
                         <div class="row">
                             <div class="col center mx-auto">
-                                <asp:Button ID="deletePBtn" class="btn btn-danger w-50" runat="server" Text="Delete User Permanently" OnClick="deletePBtn_Click" />
+                                <asp:Button ID="deleteUserLBtn" class="btn btn-danger w-50" runat="server" Text="Delete User Permanently" OnClick="DeleteUserLBtn_Click" />
                             </div>
                         </div>
-                    </div>
-                    <a href="homepage.aspx"><< Back to Home</a>
+                    </div>                   
                 </div>
                 <br />
             </div>

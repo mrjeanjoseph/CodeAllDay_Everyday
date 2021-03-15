@@ -130,7 +130,6 @@ namespace Bookstore.Web
             {
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
-
         }
 
         protected void SearchBtn_Click(object sender, EventArgs e)

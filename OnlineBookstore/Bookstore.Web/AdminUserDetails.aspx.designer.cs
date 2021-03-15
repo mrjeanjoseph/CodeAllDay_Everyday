@@ -51,31 +51,31 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.TextBox statusTxtBx;
 
         /// <summary>
-        /// userActiveBtn control.
+        /// userActiveLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton userActiveBtn;
+        protected global::System.Web.UI.WebControls.LinkButton userActiveLBtn;
 
         /// <summary>
-        /// userPendingBtn control.
+        /// userPendingLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton userPendingBtn;
+        protected global::System.Web.UI.WebControls.LinkButton userPendingLBtn;
 
         /// <summary>
-        /// userDeleteBtn control.
+        /// userInactiveLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton userDeleteBtn;
+        protected global::System.Web.UI.WebControls.LinkButton userInactiveLBtn;
 
         /// <summary>
         /// birthDateTxtBx control.
@@ -150,13 +150,13 @@ namespace Bookstore.Web
         protected global::System.Web.UI.WebControls.TextBox zipCodeTxtBx;
 
         /// <summary>
-        /// deletePBtn control.
+        /// deleteUserLBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button deletePBtn;
+        protected global::System.Web.UI.WebControls.Button deleteUserLBtn;
 
         /// <summary>
         /// SqlDataSource1 control.
